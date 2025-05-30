@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "pretest": "rm -rf ./allure-results",
     "test": "allure run -- run-p -c 'test:*'",
     "test:unit": "vitest run ./test/unit",
     "test:e2e": "playwright test",
+    "test:allure2": "mkdir ./allure-results && cp -rf allure2-demo-test-results/* allure-results",
     "report:open": "allure open"
   },
   "keywords": [],

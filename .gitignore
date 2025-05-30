@@ -4,3 +4,4 @@ allure-results/
 test-results/
 node_modules/
 out/
+history.jsonl

@@ -54,6 +54,7 @@ export default defineConfig({
         reportLanguage: "en",
         open: false,
         charts: chartLayout,
+        filter: ({ labels }) => !labels.find(({ name, value }) => name === "language" && value === "java"),
       },
     },
     awesomeE2E: {
@@ -87,6 +88,17 @@ export default defineConfig({
         open: false,
         charts: chartLayout,
         groupBy: ["epic", "feature", "story"],
+        filter: ({ labels }) => !labels.find(({ name, value }) => name === "language" && value === "java"),
+      },
+    },
+    awesomeAllure2: {
+      import: "@allurereport/plugin-awesome",
+      options: {
+        reportName: "Allure Awesome: allure 2 demo data",
+        singleFile: false,
+        reportLanguage: "en",
+        open: false,
+        filter: ({ labels }) => labels.find(({ name, value }) => name === "language" && value === "java"),
       },
     },
     dashboard: {
