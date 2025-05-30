@@ -39,6 +39,12 @@ jobs:
         run: pnpm t
         continue-on-error: true
 
+      - name: Commit updated history.jsonl file
+        run: |
+          git add -A
+          git commit -am "update history"
+          git push origin ${GITHUB_REF}
+
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
