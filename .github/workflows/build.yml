@@ -12,6 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.QAMETA_CI }}
+
+      - name: "Configure CI Git User"
+        run: |
+          git config --global user.name qameta-ci
+          git config --global user.email qameta-ci@qameta.io
 
       - name: Enable Corepack
         run: corepack enable pnpm
