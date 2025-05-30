@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "node16",
+    "target": "ES2017",
+    "lib": ["ES2017"],
+    "moduleResolution": "node16",
+    "types": ["node"]
+  },
+  "include": [
+    "./playwright.config.ts",
+    "./vitest.config.ts",
+    "./vitest.setup.ts",
+    "./test/**/*"
+  ]
+}
