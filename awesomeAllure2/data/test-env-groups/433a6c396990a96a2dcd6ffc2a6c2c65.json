@@ -1,1 +1,1 @@
-{"id":"433a6c396990a96a2dcd6ffc2a6c2c65","fullName":"home.test.ts:15:5","name":"should allow to toggle site theme","status":"passed","testResultsByEnv":{"chromium":"54723f0810a89e0adb6452ca06fdeab6","firefox":"6aa96f5e0a721a19c67a736c0d2bf13a","safari":"6c8546a53d46fd7f6d0980823b51e2d8"}}
+{"id":"433a6c396990a96a2dcd6ffc2a6c2c65","fullName":"home.test.ts:15:5","name":"should allow to toggle site theme","status":"passed","testResultsByEnv":{"chromium":"a1a10c1e340fc8bca53999808c6b4cf9","firefox":"1d2deba58837b06bebf2c14c23f78799","safari":"ee2d25283d846c1b64f963d956cafdb0"}}
