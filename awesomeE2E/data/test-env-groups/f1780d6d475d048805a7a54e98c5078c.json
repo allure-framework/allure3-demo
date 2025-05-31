@@ -1,1 +1,1 @@
-{"id":"f1780d6d475d048805a7a54e98c5078c","fullName":"start.test.ts:179:5","name":"\"NUnit\"","status":"broken","testResultsByEnv":{"chromium":"c0ea9c5f4643f1a86af593b3853276ec","default":"bb45c526216cb926e9fd6c31d3b08ab4","safari":"b0416279cbac00b6365fa98b0d1c50bf"}}
+{"id":"f1780d6d475d048805a7a54e98c5078c","fullName":"start.test.ts:179:5","name":"\"NUnit\"","status":"passed","testResultsByEnv":{"chromium":"c5fb0521f6c1acb93589c8c17db66b1b","firefox":"3b3853a1dc99cae64743136c8d281a37","safari":"0b1eae1e5124997486ac4cbd694cb8fe"}}
