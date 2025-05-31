@@ -1,1 +1,1 @@
-{"reportName":"Allure 2","statistic":{"total":38,"passed":26,"broken":9,"failed":2,"skipped":1},"time":{"maxDuration":30517,"minDuration":1,"sumDuration":428125,"start":1748616058727,"stop":1748678839779,"duration":62781052}}
+{"reportName":"Allure 2","statistic":{"total":38,"passed":25,"broken":10,"skipped":1,"failed":2},"time":{"maxDuration":30607,"minDuration":1,"sumDuration":478425,"start":1748616058727,"stop":1748679377065,"duration":63318338}}
