@@ -1,1 +1,1 @@
-{"id":"50a98488bf2d4957265c2a5956c17542","fullName":"start.test.ts:101:5","name":"\"PHPUnit\"","status":"passed","testResultsByEnv":{"firefox":"ffc1f18b2b653763a15ad44a01f68620","chromium":"17dc6f1de8c2abe01a3f83dee94e6b22","safari":"d5a8fbb0eda80f4f70453586ec87bf30"}}
+{"id":"50a98488bf2d4957265c2a5956c17542","fullName":"start.test.ts:101:5","name":"\"PHPUnit\"","status":"broken","testResultsByEnv":{"chromium":"c401949f52b114937eace428f788073e","firefox":"ee480463f6ae1b5103f8457574ff1cff","safari":"40b9a1bb9bd12755719f88b087317099"}}
