@@ -15,6 +15,11 @@
     "test:e2e": "playwright test",
     "test:unit": "vitest run ./test/unit"
   },
+  "pnpm": {
+    "overrides": {
+      "form-data": "^4.0.4"
+    }
+  },
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
