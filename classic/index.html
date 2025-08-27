@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Allure 3 demo report </title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles-a4aa0e01d396d0e5922c.css">
+<link rel="preload" href="pt-root-ui_vf.woff" as="font" type="font/woff" crossorigin /> 
+<link rel="preload" href="JetBrainsMono_vf.woff2" as="font" type="font/woff" crossorigin /> 
+<link rel="preload" href="pt-root-ui_vf.woff2" as="font" type="font/woff" crossorigin /> 
+<link rel="preload" href="JetBrainsMono_vf.woff" as="font" type="font/woff" crossorigin /> 
+</head>
+<body>
+    <div id="app"></div>
+    
+    <script>
+      const { origin, pathname } = window.location; 
+      const url = new URL(pathname, origin);
+      const baseEl = document.createElement("base");
+      
+      baseEl.href = url.toString();
+      
+      window.document.head.appendChild(baseEl);
+    </script>
+  
+    <script>
+      window.allure = window.allure || {};
+    </script>
+    <script   src="app-61e69df92854407d3a23.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNDJ3J7WT0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LNDJ3J7WT0', {
+          "report": "classic",
+          "allureVersion": "3.0.0-beta.16",
+          "reportUuid": "97effc42-9490-48c6-b31a-4b9f42eed1cc",
+          "single_file": "false"
+        });
+    </script>
+    <script>
+      window.allureReportOptions = {"reportName":"Allure 3 demo report","logo":"","theme":"light","reportLanguage":"en","createdAt":1756283603506,"reportUuid":"97effc42-9490-48c6-b31a-4b9f42eed1cc","groupBy":["parentSuite","suite","subSuite"],"allureVersion":"3.0.0-beta.16","cacheKey":"1756283603506"}
+    </script>
+    
+      <script async>
+        window.allureReportDataReady = true;
+      </script>
+    
+</body>
+</html>
