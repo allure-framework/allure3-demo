@@ -1,1 +1,1 @@
-{"name":"Allure Awesome: BDD","stats":{"total":30,"skipped":1,"failed":2,"passed":23,"broken":4},"status":"failed","duration":255812,"createdAt":1756283599565,"plugin":"Awesome"}
+{"name":"Allure Awesome: BDD","stats":{"total":30,"failed":2,"skipped":1,"broken":4,"passed":23},"status":"failed","duration":247968,"createdAt":1756383059605,"plugin":"Awesome"}

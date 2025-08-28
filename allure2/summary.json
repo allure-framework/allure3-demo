@@ -1,1 +1,1 @@
-{"name":"Allure 2","stats":{"total":38,"passed":31,"skipped":1,"failed":2,"broken":4},"status":"failed","duration":262257,"createdAt":1756283599565,"plugin":"Allure2"}
+{"name":"Allure 2","stats":{"total":38,"passed":31,"failed":2,"skipped":1,"broken":4},"status":"failed","duration":254413,"createdAt":1756383059605,"plugin":"Allure2"}
