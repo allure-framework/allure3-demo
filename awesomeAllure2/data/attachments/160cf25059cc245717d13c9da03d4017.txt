@@ -1,0 +1,210 @@
+
+> allure3-demo@1.0.0 test:unit /home/runner/work/allure3-demo/allure3-demo
+> vitest run ./test/unit
+
+
+> allure3-demo@1.0.0 test:allure2 /home/runner/work/allure3-demo/allure3-demo
+> mkdir ./allure-results && cp -rf allure2-demo-test-results/* allure-results
+
+
+> allure3-demo@1.0.0 test:e2e /home/runner/work/allure3-demo/allure3-demo
+> playwright test
+
+
+[1m[46m RUN [49m[22m [36mv3.2.4 [39m[90m/home/runner/work/allure3-demo/allure3-demo[39m
+
+
+[2mRunning [22m24[2m tests using [22m2[2m workers[22m
+
+[1A[2K[1/24] [chromium] › test/e2e/home.test.ts:15:5 › home page › theme toggler › should allow to toggle site theme
+[1A[2K[2/24] [chromium] › test/e2e/start.test.ts:27:5 › js › "Playwright"
+ [31m❯[39m test/unit/index.test.ts [2m([22m[2m6 tests[22m[2m | [22m[31m3 failed[39m[2m | [22m[33m1 skipped[39m[2m)[22m[32m 40[2mms[22m[39m
+   [32m✓[39m unit tests[2m > [22mshould pass[32m 1[2mms[22m[39m
+[31m   [31m×[31m unit tests[2m > [22mshould fail[39m[32m 8[2mms[22m[39m
+[31m     → expected 1 to be 2 // Object.is equality[39m
+[31m   [31m×[31m unit tests[2m > [22mshould be broken[39m[32m 0[2mms[22m[39m
+[31m     → the break reason[39m
+   [2m[90m↓[39m[22m unit tests[2m > [22mshould be skipped[32m 0[2mms[22m[39m
+[31m   [31m×[31m unit tests[2m > [22mparent suite[2m > [22msuite[2m > [22msub suite[2m > [22mshould contain steps (actual/expected)[39m[32m 7[2mms[22m[39m
+[31m     → expected { foo: { bar: { baz: 'beep' } } } to deeply equal { baz: { bar: { foo: 'beep' } } }[39m
+   [32m✓[39m unit tests[2m > [22mshould contain different kind of attachments[32m 21[2mms[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m3 failed[39m[22m[2m | [22m[1m[32m2 passed[39m[22m[2m | [22m[33m1 skipped[39m[90m (6)[39m
+[2m   Start at [22m 10:49:55
+[2m   Duration [22m 2.63s[2m (transform 56ms, setup 37ms, collect 29ms, tests 40ms, environment 0ms, prepare 95ms)[22m
+
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
+[1A[2K[3/24] [chromium] › test/e2e/start.test.ts:56:5 › ts › "Playwright"
+[1A[2K[4/24] [firefox] › test/e2e/home.test.ts:15:5 › home page › theme toggler › should allow to toggle site theme
+[1A[2K[5/24] [chromium] › test/e2e/start.test.ts:80:5 › kotlin › "JUnit5"
+[1A[2K[6/24] [firefox] › test/e2e/start.test.ts:27:5 › js › "Playwright"
+[1A[2K[7/24] [chromium] › test/e2e/start.test.ts:101:5 › php › "PHPUnit"
+[1A[2K[8/24] [chromium] › test/e2e/start.test.ts:127:5 › python › "pytest"
+[1A[2K[9/24] [firefox] › test/e2e/start.test.ts:56:5 › ts › "Playwright"
+[1A[2K[10/24] [firefox] › test/e2e/start.test.ts:80:5 › kotlin › "JUnit5"
+[1A[2K[11/24] [firefox] › test/e2e/start.test.ts:101:5 › php › "PHPUnit"
+[1A[2K[12/24] [firefox] › test/e2e/start.test.ts:127:5 › python › "pytest"
+
+[1A[2K[31m  1) [chromium] › test/e2e/start.test.ts:127:5 › python › "pytest" [2m─────────────────────────────────[22m[39m
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForEvent: Test timeout of 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for event "download"
+    ============================================================
+
+    [90m   at [39mpageObjects/start.ts:126
+
+    [0m [90m 124 |[39m
+     [90m 125 |[39m       [36mtry[39m {
+    [31m[1m>[22m[39m[90m 126 |[39m         [36mconst[39m downloadPromise [33m=[39m [36mthis[39m[33m.[39mpage[33m.[39mwaitForEvent([32m"download"[39m)[33m;[39m
+     [90m     |[39m                                           [31m[1m^[22m[39m
+     [90m 127 |[39m
+     [90m 128 |[39m         [36mawait[39m [36mthis[39m[33m.[39mpage[33m.[39mgetByText([32m"Download .zip"[39m)[33m.[39mclick()[33m;[39m
+     [90m 129 |[39m         [90m// dirty hack because sometime download finishes before the download promise is able to be resolved[39m[0m
+    [2m    at StartPage.checkTestDataSets (/home/runner/work/allure3-demo/allure3-demo/test/e2e/pageObjects/start.ts:126:43)[22m
+    [2m    at /home/runner/work/allure3-demo/allure3-demo/test/e2e/start.test.ts:139:7[22m
+
+[2m    attachment #5: [1mscreenshot[2m (image/png) [2m──────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-python-pytest--chromium/test-failed-1.png[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    Error Context: test-results/start-python-pytest--chromium/error-context.md[22m
+
+[2m    attachment #7: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-python-pytest--chromium/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        pnpm exec playwright show-trace test-results/start-python-pytest--chromium/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+
+[1A[2K[13/24] [chromium] › test/e2e/start.test.ts:154:5 › java › "JUnit5"
+[1A[2K[14/24] [chromium] › test/e2e/start.test.ts:179:5 › csharp › "NUnit"
+[1A[2K[15/24] [safari] › test/e2e/home.test.ts:15:5 › home page › theme toggler › should allow to toggle site theme
+
+[1A[2K[31m  2) [firefox] › test/e2e/start.test.ts:127:5 › python › "pytest" [2m──────────────────────────────────[22m[39m
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForEvent: Test timeout of 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for event "download"
+    ============================================================
+
+    [90m   at [39mpageObjects/start.ts:126
+
+    [0m [90m 124 |[39m
+     [90m 125 |[39m       [36mtry[39m {
+    [31m[1m>[22m[39m[90m 126 |[39m         [36mconst[39m downloadPromise [33m=[39m [36mthis[39m[33m.[39mpage[33m.[39mwaitForEvent([32m"download"[39m)[33m;[39m
+     [90m     |[39m                                           [31m[1m^[22m[39m
+     [90m 127 |[39m
+     [90m 128 |[39m         [36mawait[39m [36mthis[39m[33m.[39mpage[33m.[39mgetByText([32m"Download .zip"[39m)[33m.[39mclick()[33m;[39m
+     [90m 129 |[39m         [90m// dirty hack because sometime download finishes before the download promise is able to be resolved[39m[0m
+    [2m    at StartPage.checkTestDataSets (/home/runner/work/allure3-demo/allure3-demo/test/e2e/pageObjects/start.ts:126:43)[22m
+    [2m    at /home/runner/work/allure3-demo/allure3-demo/test/e2e/start.test.ts:139:7[22m
+
+[2m    attachment #5: [1mscreenshot[2m (image/png) [2m──────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-python-pytest--firefox/test-failed-1.png[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    Error Context: test-results/start-python-pytest--firefox/error-context.md[22m
+
+[2m    attachment #7: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-python-pytest--firefox/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        pnpm exec playwright show-trace test-results/start-python-pytest--firefox/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+
+[1A[2K[16/24] [firefox] › test/e2e/start.test.ts:154:5 › java › "JUnit5"
+[1A[2K[17/24] [safari] › test/e2e/start.test.ts:27:5 › js › "Playwright"
+[1A[2K[18/24] [firefox] › test/e2e/start.test.ts:179:5 › csharp › "NUnit"
+[1A[2K[19/24] [safari] › test/e2e/start.test.ts:56:5 › ts › "Playwright"
+[1A[2K[20/24] [safari] › test/e2e/start.test.ts:80:5 › kotlin › "JUnit5"
+[1A[2K[21/24] [safari] › test/e2e/start.test.ts:101:5 › php › "PHPUnit"
+[1A[2K[31m  3) [safari] › test/e2e/start.test.ts:101:5 › php › "PHPUnit" [2m─────────────────────────────────────[22m[39m
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for getByText('PHPUnit', { exact: true })[22m
+
+
+    [0m [90m 107 |[39m       [36mawait[39m page[33m.[39mgoto([32m"/start"[39m)[33m;[39m
+     [90m 108 |[39m       [36mawait[39m page[33m.[39mgetByText([32m"PHP"[39m)[33m.[39mclick({ force[33m:[39m [36mtrue[39m })[33m;[39m
+    [31m[1m>[22m[39m[90m 109 |[39m       [36mawait[39m page[33m.[39mgetByText(framework[33m,[39m { exact[33m:[39m [36mtrue[39m })[33m.[39mclick({ force[33m:[39m [36mtrue[39m })[33m;[39m
+     [90m     |[39m                                                        [31m[1m^[22m[39m
+     [90m 110 |[39m
+     [90m 111 |[39m       [36mconst[39m dataSets [33m=[39m [36mawait[39m startPage[33m.[39mgetTestDataSets(page)[33m;[39m
+     [90m 112 |[39m[0m
+    [2m    at /home/runner/work/allure3-demo/allure3-demo/test/e2e/start.test.ts:109:56[22m
+
+[2m    attachment #5: [1mscreenshot[2m (image/png) [2m──────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-php-PHPUnit--safari/test-failed-1.png[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    Error Context: test-results/start-php-PHPUnit--safari/error-context.md[22m
+
+[2m    attachment #7: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-php-PHPUnit--safari/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        pnpm exec playwright show-trace test-results/start-php-PHPUnit--safari/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+
+[1A[2K[22/24] [safari] › test/e2e/start.test.ts:127:5 › python › "pytest"
+
+[1A[2K[31m  4) [safari] › test/e2e/start.test.ts:127:5 › python › "pytest" [2m───────────────────────────────────[22m[39m
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForEvent: Test timeout of 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for event "download"
+    ============================================================
+
+    [90m   at [39mpageObjects/start.ts:126
+
+    [0m [90m 124 |[39m
+     [90m 125 |[39m       [36mtry[39m {
+    [31m[1m>[22m[39m[90m 126 |[39m         [36mconst[39m downloadPromise [33m=[39m [36mthis[39m[33m.[39mpage[33m.[39mwaitForEvent([32m"download"[39m)[33m;[39m
+     [90m     |[39m                                           [31m[1m^[22m[39m
+     [90m 127 |[39m
+     [90m 128 |[39m         [36mawait[39m [36mthis[39m[33m.[39mpage[33m.[39mgetByText([32m"Download .zip"[39m)[33m.[39mclick()[33m;[39m
+     [90m 129 |[39m         [90m// dirty hack because sometime download finishes before the download promise is able to be resolved[39m[0m
+    [2m    at StartPage.checkTestDataSets (/home/runner/work/allure3-demo/allure3-demo/test/e2e/pageObjects/start.ts:126:43)[22m
+    [2m    at /home/runner/work/allure3-demo/allure3-demo/test/e2e/start.test.ts:139:7[22m
+
+[2m    attachment #5: [1mscreenshot[2m (image/png) [2m──────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-python-pytest--safari/test-failed-1.png[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    Error Context: test-results/start-python-pytest--safari/error-context.md[22m
+
+[2m    attachment #7: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-python-pytest--safari/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        pnpm exec playwright show-trace test-results/start-python-pytest--safari/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+
+[1A[2K[23/24] [safari] › test/e2e/start.test.ts:154:5 › java › "JUnit5"
+[1A[2K[24/24] [safari] › test/e2e/start.test.ts:179:5 › csharp › "NUnit"
+[1A[2K[31m  4 failed[39m
+[31m    [chromium] › test/e2e/start.test.ts:127:5 › python › "pytest" [2m──────────────────────────────────[22m[39m
+[31m    [firefox] › test/e2e/start.test.ts:127:5 › python › "pytest" [2m───────────────────────────────────[22m[39m
+[31m    [safari] › test/e2e/start.test.ts:101:5 › php › "PHPUnit" [2m──────────────────────────────────────[22m[39m
+[31m    [safari] › test/e2e/start.test.ts:127:5 › python › "pytest" [2m────────────────────────────────────[22m[39m
+[32m  20 passed[39m[2m (3.1m)[22m
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m

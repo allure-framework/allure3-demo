@@ -1,1 +1,1 @@
-{"name":"Allure Awesome: unit tests","stats":{"total":6,"failed":2,"skipped":1,"broken":1,"passed":2},"status":"failed","duration":30,"createdAt":1756382889340,"plugin":"Awesome"}
+{"name":"Allure Awesome: unit tests","stats":{"total":6,"failed":2,"passed":2,"skipped":1,"broken":1},"status":"failed","duration":37,"createdAt":1756810197826,"plugin":"Awesome","newTests":[],"flakyTests":[],"retryTests":[],"pullRequestHref":"","jobHref":"https://github.com/allure-framework/allure3-demo/actions/runs/17401154859"}

@@ -1,0 +1,71 @@
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 3 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m test/unit/index.test.ts[2m > [22munit tests[2m > [22mshould fail
+[31m[1mAssertionError[22m: expected 1 to be 2 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 2[39m
+[31m+ 1[39m
+
+[36m [2m❯[22m test/unit/index.test.ts:[2m19:15[22m[39m
+    [90m 17| [39m    [35mawait[39m [34mlabel[39m([32m"env"[39m[33m,[39m [32m"node"[39m)[33m;[39m
+    [90m 18| [39m
+    [90m 19| [39m    [34mexpect[39m([34m1[39m)[33m.[39m[34mtoBe[39m([34m2[39m)[33m;[39m
+    [90m   | [39m              [31m^[39m
+    [90m 20| [39m  })[33m;[39m
+    [90m 21| [39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m test/unit/index.test.ts[2m > [22munit tests[2m > [22mshould be broken
+[31m[1mError[22m: the break reason[39m
+[36m [2m❯[22m test/unit/index.test.ts:[2m25:11[22m[39m
+    [90m 23| [39m    [35mawait[39m [34mlabel[39m([32m"env"[39m[33m,[39m [32m"node"[39m)[33m;[39m
+    [90m 24| [39m
+    [90m 25| [39m    [35mthrow[39m [35mnew[39m [33mError[39m([32m"the break reason"[39m)[33m;[39m
+    [90m   | [39m          [31m^[39m
+    [90m 26| [39m  })[33m;[39m
+    [90m 27| [39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m test/unit/index.test.ts[2m > [22munit tests[2m > [22mparent suite[2m > [22msuite[2m > [22msub suite[2m > [22mshould contain steps (actual/expected)
+[31m[1mAssertionError[22m: expected { foo: { bar: { baz: 'beep' } } } to deeply equal { baz: { bar: { foo: 'beep' } } }[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[2m  {[22m
+[32m-   "baz": {[39m
+[31m+   "foo": {[39m
+[2m      "bar": {[22m
+[32m-       "foo": "beep",[39m
+[31m+       "baz": "beep",[39m
+[2m      },[22m
+[2m    },[22m
+[2m  }[22m
+
+[36m [2m❯[22m body test/unit/index.test.ts:[2m51:59[22m[39m
+    [90m 49| [39m            [35mawait[39m [34mstep[39m([32m"step 3.1"[39m[33m,[39m [35masync[39m () [33m=>[39m {
+    [90m 50| [39m              [35mawait[39m [34mstep[39m([32m"step 3.1.1"[39m[33m,[39m [35masync[39m () [33m=>[39m {
+    [90m 51| [39m                expect({ foo: { bar: { baz: "beep" } } }).toEqual({ ba…
+    [90m   | [39m                                                          [31m^[39m
+    [90m 52| [39m              })[33m;[39m
+    [90m 53| [39m            })[33m;[39m
+[90m [2m❯[22m body node_modules/.pnpm/allure-js-commons@3.3.3_allure-playwright@3.3.3_@playwright+test@1.55.0_/node_modules/allure-js-commons/src/facade.ts:[2m113:48[22m[39m
+[90m [2m❯[22m node_modules/.pnpm/allure-js-commons@3.3.3_allure-playwright@3.3.3_@playwright+test@1.55.0_/node_modules/allure-js-commons/src/sdk/runtime/MessageTestRuntime.ts:[2m175:28[22m[39m
+[90m [2m❯[22m asyncGeneratorStep node_modules/.pnpm/allure-js-commons@3.3.3_allure-playwright@3.3.3_@playwright+test@1.55.0_/node_modules/allure-js-commons/dist/esm/sdk/runtime/MessageTestRuntime.js:[2m6:70[22m[39m
+[90m [2m❯[22m _next node_modules/.pnpm/allure-js-commons@3.3.3_allure-playwright@3.3.3_@playwright+test@1.55.0_/node_modules/allure-js-commons/dist/esm/sdk/runtime/MessageTestRuntime.js:[2m7:163[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯[22m[39m
+
+[1A[2K[2m[chromium] › test/e2e/start.test.ts:127:5 › python › "pytest"[22m
+Download failed for "pytest" with options: Pipenv, py3.8
+[1A[2K[2m[firefox] › test/e2e/start.test.ts:127:5 › python › "pytest"[22m
+Download failed for "pytest" with options: Pipenv, py3.8
+[1A[2K[2m[safari] › test/e2e/start.test.ts:127:5 › python › "pytest"[22m
+Download failed for "pytest" with options: Pipenv, py3.8
+ERROR: "test:e2e" exited with 1.

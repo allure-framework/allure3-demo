@@ -1,1 +1,1 @@
-{"name":"Allure Classic","stats":{"total":38,"passed":31,"failed":2,"skipped":1,"broken":4},"status":"failed","createdAt":1756383059605,"duration":254413,"plugin":"Classic"}
+{"name":"Allure Classic","stats":{"total":38,"passed":30,"failed":2,"skipped":1,"broken":5},"status":"failed","createdAt":1756810381847,"duration":256997,"plugin":"Classic","newTests":[],"flakyTests":[],"retryTests":[],"pullRequestHref":"","jobHref":"https://github.com/allure-framework/allure3-demo/actions/runs/17401154859"}
