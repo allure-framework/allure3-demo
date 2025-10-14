@@ -1,1 +1,1 @@
-{"id":"3a04d0ec17e1e4b923fa5428583d5257","fullName":"start.test.ts:80:5","name":"\"JUnit5\"","status":"passed","testResultsByEnv":{"chromium":"bae239d570f34a1281a4e0e82c15a628","firefox":"0a10717a8a3b54e5db125f6685234617","safari":"a0db5d0187323b69a44c137e984ee8ee"}}
+{"id":"3a04d0ec17e1e4b923fa5428583d5257","fullName":"start.test.ts:82:5","name":"\"JUnit5\"","status":"passed","testResultsByEnv":{"ubuntu-latest":"b004f7a72b06b41a9b4449eb7d79f8e4","macos-latest":"62eda3b43944b8eea660884a360c7b9e"}}

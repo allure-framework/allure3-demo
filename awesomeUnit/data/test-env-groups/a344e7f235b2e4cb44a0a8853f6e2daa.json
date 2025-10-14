@@ -1,1 +1,1 @@
-{"id":"a344e7f235b2e4cb44a0a8853f6e2daa","fullName":"io.qameta.allure.IssuesWebTest.shouldCloseIssue","name":"Closing new issue for authorized user","status":"passed","testResultsByEnv":{"default":"a00f3687f3d80fcc4bff009d5967ed00"}}
+{"id":"a344e7f235b2e4cb44a0a8853f6e2daa","fullName":"io.qameta.allure.IssuesWebTest.shouldCloseIssue","name":"Closing new issue for authorized user","status":"passed","testResultsByEnv":{"macos-latest":"a00f3687f3d80fcc4bff009d5967ed00"}}

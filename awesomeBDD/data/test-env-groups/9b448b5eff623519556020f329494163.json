@@ -1,1 +1,1 @@
-{"id":"9b448b5eff623519556020f329494163","fullName":"io.qameta.allure.IssuesWebTest.shouldCreateIssue","name":"Creating new issue authorized user","status":"passed","testResultsByEnv":{"default":"74364e3f7162027e8e10fe7f3af56b5e"}}
+{"id":"9b448b5eff623519556020f329494163","fullName":"io.qameta.allure.IssuesWebTest.shouldCreateIssue","name":"Creating new issue authorized user","status":"passed","testResultsByEnv":{"macos-latest":"74364e3f7162027e8e10fe7f3af56b5e"}}

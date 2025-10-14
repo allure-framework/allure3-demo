@@ -1,1 +1,1 @@
-{"id":"4d22f729833c756614a79e3460cbef68","fullName":"start.test.ts:27:5","name":"\"Playwright\"","status":"passed","testResultsByEnv":{"chromium":"6d3f8d25940c72a2dfd517cabc47699e","firefox":"e4d81f8dc5f03f4f0478dbdba2b80cd7","safari":"46b0f706b72c40550924d059cb3c6396"}}
+{"id":"4d22f729833c756614a79e3460cbef68","fullName":"start.test.ts:27:5","name":"\"Playwright\"","status":"passed","testResultsByEnv":{"ubuntu-latest":"c87bc50cc7fb8c392ec00b2f2059503f","macos-latest":"215e173d26b1cb919df345c729f83e35"}}
