@@ -55,6 +55,7 @@ jobs:
         run: pnpm allure run --config=./allurerc.mjs --environment=${{ matrix.os }} --stage=allure-results-${{ matrix.os }} -- pnpm test
 
       - name: Upload test results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results-${{ matrix.os }}
@@ -90,6 +91,18 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Download allure results from Ubuntu
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-ubuntu-latest
+          path: ./
+
+      - name: Download allure results from macOS
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-macos-latest
+          path: ./
 
       - name: Build report
         run: pnpm allure generate --stage="allure-results-*.zip" --output=./allure-report
