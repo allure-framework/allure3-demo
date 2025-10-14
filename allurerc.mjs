@@ -2,42 +2,62 @@ import { defineConfig } from "allure";
 
 const chartLayout = [
   {
-    type: "trend",
-    dataType: "status",
-    mode: "percent",
-  },
-  {
-    type: "trend",
-    dataType: "status",
-    limit: 10,
-  },
-  {
-    title: "Custom Status Trend",
-    type: "trend",
-    dataType: "status",
-    mode: "percent",
-    limit: 15,
-  },
-  {
-    type: "trend",
-    dataType: "status",
-    limit: 15,
-    metadata: {
-      executionIdAccessor: (executionOrder) => `build-${executionOrder}`,
-      executionNameAccessor: (executionOrder) => `build #${executionOrder}`,
-    },
-  },
-  {
-    type: "trend",
-    dataType: "severity",
-    limit: 15,
-  },
-  {
     type: "pie",
+    title: "Current status",
   },
   {
-    type: "pie",
-    title: "Custom Pie",
+    type: "trend",
+    dataType: "status",
+    title: "Status dynamics",
+  },
+  {
+    type: "bar",
+    dataType: "statusBySeverity",
+    title: "Test result severities",
+  },
+  {
+    type: "bar",
+    dataType: "statusTrend",
+    title: "Status change dynamics",
+  },
+  {
+    type: "bar",
+    dataType: "statusChangeTrend",
+    title: "Test base growth dynamics",
+  },
+  {
+    type: "treemap",
+    dataType: "coverageDiff",
+    title: "Coverage diff map",
+  },
+  {
+    type: "treemap",
+    dataType: "successRateDistribution",
+    title: "Success rate disctribution",
+  },
+  {
+    type: "heatmap",
+    title: "Problems distribution by environment",
+  },
+  {
+    type: "bar",
+    title: "Stability rate disctribution",
+  },
+  {
+    type: "bar",
+    title: "Duration by layer histogram",
+  },
+  {
+    type: "bar", // OR it might be trend
+    title: "Performance dynamics",
+  },
+  {
+    type: "bar",
+    title: "FBSU age pyramid",
+  },
+  {
+    type: "funnel",
+    title: "Testing pyramid",
   },
 ];
 
@@ -130,22 +150,8 @@ export default defineConfig({
     },
     csv: {
       options: {
-        fileName: "report.csv"
-      }
-    }
-  },
-  environments: {
-    chromium: {
-      matcher: ({ labels }) => labels.find(({ name, value }) => name === "env" && value === "chromium"),
+        fileName: "report.csv",
+      },
     },
-    firefox: {
-      matcher: ({ labels }) => labels.find(({ name, value }) => name === "env" && value === "firefox"),
-    },
-    safari: {
-      matcher: ({ labels }) => labels.find(({ name, value }) => name === "env" && value === "webkit"),
-    },
-    node: {
-      matcher: ({ labels }) => labels.find(({ name, value }) => name === "env" && value === "node"),
-    }
   },
 });
