@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { epic, feature, label, step, story } from "allure-js-commons";
+import { epic, feature, label, severity, step, story } from "allure-js-commons";
 import { HomePage } from "./pageObjects/index.js";
 
 let homePage: HomePage;
@@ -17,6 +17,7 @@ test.describe("home page", () => {
       await feature("Theme toggler");
       await story("Toggle theme");
       await label("env", browserName);
+      await severity("critical");
 
       await step("check initial theme", async () => {
         await homePage.screenshot("Initial theme");

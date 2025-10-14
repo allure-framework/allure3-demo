@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { label, epic, feature, story } from "allure-js-commons";
+import { epic, feature, label, severity, story } from "allure-js-commons";
 import { StartPage } from "./pageObjects/index.js";
 
 let startPage: StartPage;
@@ -25,6 +25,7 @@ test.describe("js", () => {
 
   for (const framework of JAVASCRIPT_FRAMEWORKS) {
     test(`"${framework}"`, async ({ browserName, page }) => {
+      await severity("high");
       await epic("Start page");
       await feature("JavaScript");
       await story(framework);
@@ -54,6 +55,7 @@ test.describe("ts", () => {
 
   for (const framework of TYPESCRIPT_FRAMEWORKS) {
     test(`"${framework}"`, async ({ browserName, page }) => {
+      await severity("medium");
       await epic("Start page");
       await feature("TypeScript");
       await story(framework);
@@ -78,6 +80,7 @@ test.describe("kotlin", () => {
 
   for (const framework of KOTLIN_FRAMEWORKS) {
     test(`"${framework}"`, async ({ browserName, page }) => {
+      await severity("low");
       await epic("Start page");
       await feature("Kotlin");
       await story(framework);

@@ -10,15 +10,10 @@
   "scripts": {
     "report:open": "allure open",
     "pretest": "rm -rf ./allure-results",
-    "test": "allure run -- run-p -c 'test:*'",
+    "test": "run-p -c 'test:*'",
     "test:allure2": "mkdir ./allure-results && cp -rf allure2-demo-test-results/* allure-results",
     "test:e2e": "playwright test",
     "test:unit": "vitest run ./test/unit"
-  },
-  "pnpm": {
-    "overrides": {
-      "form-data": "^4.0.4"
-    }
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",
@@ -26,7 +21,7 @@
     "@types/d3-shape": "^3",
     "@types/node": "^22.15.24",
     "@vitest/runner": "^3.2.4",
-    "allure": "3.0.0-beta.18",
+    "allure": "3.0.0-beta.19",
     "allure-js-commons": "^3.3.3",
     "allure-playwright": "^3.3.3",
     "allure-vitest": "^3.3.3",
@@ -35,5 +30,10 @@
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.14",
     "vitest": "^3.2.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "form-data": "^4.0.4"
+    }
   }
 }
