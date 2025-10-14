@@ -60,6 +60,7 @@ jobs:
         with:
           name: allure-results-${{ matrix.os }}
           path: ./allure-results-${{ matrix.os }}.zip
+          compression-level: 0
 
   report:
     runs-on: ubuntu-latest
