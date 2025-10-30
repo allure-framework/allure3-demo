@@ -1,0 +1,1 @@
+{"name":"Allure Awesome: all test","stats":{"total":60,"skipped":2,"failed":4,"passed":44,"broken":10},"status":"failed","duration":478910,"createdAt":1761839363559,"plugin":"Awesome","newTests":[],"flakyTests":[],"retryTests":[],"pullRequestHref":"","jobHref":"https://github.com/allure-framework/allure3-demo/actions/runs/18946468728"}
