@@ -52,7 +52,7 @@ jobs:
         run: pnpm exec playwright install-deps
 
       - name: Test Project
-        run: pnpm allure run --config=./allurerc.mjs --environment=${{ matrix.os }} --stage=allure-results-${{ matrix.os }} -- pnpm test
+        run: pnpm allure run --config=./allurerc.mjs --environment="${{ matrix.os }}" --stage="allure-results-${{ matrix.os }}" -- pnpm test
 
       - name: Upload test results
         if: always()
@@ -107,6 +107,9 @@ jobs:
 
       - name: Build report
         run: pnpm allure generate --stage="allure-results-*.zip" --output=./allure-report
+
+      - name: List report files
+        run: tree -a ./allure-report
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
