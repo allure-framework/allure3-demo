@@ -34,6 +34,7 @@
   },
   "pnpm": {
     "overrides": {
+      "axios": "^1.13.1",
       "form-data": "^4.0.4"
     }
   }
