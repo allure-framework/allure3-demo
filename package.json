@@ -17,7 +17,7 @@
     "test:unit": "vitest run ./test/unit"
   },
   "devDependencies": {
-    "@playwright/test": "^1.55.0",
+    "@playwright/test": "^1.55.1",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/d3-shape": "^3",
     "@types/node": "^22.15.24",
@@ -35,7 +35,8 @@
   "pnpm": {
     "overrides": {
       "axios": "^1.13.1",
-      "form-data": "^4.0.4"
+      "form-data": "^4.0.4",
+      "glob": "^11.1.0"
     }
   }
 }
