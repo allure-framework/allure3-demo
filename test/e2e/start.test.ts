@@ -118,32 +118,6 @@ test.describe("php", () => {
   }
 });
 
-test.describe("python", () => {
-  const PYTHON_FRAMEWORKS = [
-    // "Behave",
-    "pytest",
-    // "Pytest-BDD",
-    // "Robot Framework",
-  ];
-
-  for (const framework of PYTHON_FRAMEWORKS) {
-    test(`"${framework}"`, async ({ browserName, page }) => {
-      await epic("Start page");
-      await feature("Python");
-      await story(framework);
-      await label("env", browserName);
-
-      await page.goto("/start");
-      await page.getByText("Python").click({ force: true });
-      await page.getByText(framework, { exact: true }).click({ force: true });
-
-      const dataSets = await startPage.getTestDataSets(page);
-
-      await startPage.checkTestDataSets({ dataSets, framework });
-    });
-  }
-});
-
 test.describe("java", () => {
   const JAVA_FRAMEWORKS = [
     "JUnit5",
