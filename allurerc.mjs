@@ -1,66 +1,5 @@
 import { defineConfig } from "allure";
 
-const chartLayout = [
-  {
-    type: "pie",
-    title: "Current status",
-  },
-  {
-    type: "trend",
-    dataType: "status",
-    title: "Status dynamics",
-  },
-  {
-    type: "bar",
-    dataType: "statusBySeverity",
-    title: "Test result severities",
-  },
-  {
-    type: "bar",
-    dataType: "statusTrend",
-    title: "Status change dynamics",
-  },
-  {
-    type: "bar",
-    dataType: "statusChangeTrend",
-    title: "Test base growth dynamics",
-  },
-  {
-    type: "treemap",
-    dataType: "coverageDiff",
-    title: "Coverage diff map",
-  },
-  {
-    type: "treemap",
-    dataType: "successRateDistribution",
-    title: "Success rate disctribution",
-  },
-  {
-    type: "heatmap",
-    title: "Problems distribution by environment",
-  },
-  {
-    type: "bar",
-    title: "Stability rate disctribution",
-  },
-  {
-    type: "bar",
-    title: "Duration by layer histogram",
-  },
-  {
-    type: "bar", // OR it might be trend
-    title: "Performance dynamics",
-  },
-  {
-    type: "bar",
-    title: "FBSU age pyramid",
-  },
-  {
-    type: "funnel",
-    title: "Testing pyramid",
-  },
-];
-
 export default defineConfig({
   name: "Allure 3 demo report",
   output: "./allure-report",
@@ -73,7 +12,6 @@ export default defineConfig({
         singleFile: false,
         reportLanguage: "en",
         open: false,
-        charts: chartLayout,
         filter: ({ labels }) => !labels.find(({ name, value }) => name === "language" && value === "java"),
       },
     },
@@ -84,7 +22,6 @@ export default defineConfig({
         singleFile: false,
         reportLanguage: "en",
         open: false,
-        charts: chartLayout,
         filter: ({ labels }) => labels.find(({ name, value }) => name === "framework" && value === "playwright"),
       },
     },
@@ -95,7 +32,6 @@ export default defineConfig({
         singleFile: false,
         reportLanguage: "en",
         open: false,
-        charts: chartLayout,
         filter: ({ labels }) => labels.find(({ name, value }) => name === "framework" && value === "vitest"),
       },
     },
@@ -106,7 +42,6 @@ export default defineConfig({
         singleFile: false,
         reportLanguage: "en",
         open: false,
-        charts: chartLayout,
         groupBy: ["epic", "feature", "story"],
         filter: ({ labels }) => !labels.find(({ name, value }) => name === "language" && value === "java"),
       },
@@ -126,7 +61,6 @@ export default defineConfig({
         singleFile: false,
         reportName: "Dashboard",
         reportLanguage: "en",
-        layout: chartLayout,
       },
     },
     allure2: {
