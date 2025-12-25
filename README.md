@@ -19,7 +19,7 @@ Here you can see reports created by its different plugins:
 
 ### Prerequisites
 - Node.js
-- npm
+- pnpm
 
 ### Quick Start
 
@@ -29,13 +29,13 @@ git clone https://github.com/allure-framework/allure3-demo.git
 cd allure3-demo
 
 # 2. Install dependencies
-npm install
+pnpm install
 
 # 3. Run tests (generates test results)
-npx allure run -- npm test
+pnpm exec allure run -- pnpm test
 
 # 4. Open the report in your browser
-npx allure open
+pnpm exec allure open
 ```
 
 ### What Gets Generated
@@ -51,7 +51,7 @@ After running the commands above, you'll find:
   - `dashboard/` - Dashboard overview
   - `allure2/` - Classic Allure 2 style
   - `classic/` - Classic Allure style
-  - `csv` - CSV report
+  - `csv/` - CSV report
 
 ### Where's the Config
 
