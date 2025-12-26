@@ -30,6 +30,7 @@ cd allure3-demo
 
 # 2. Install dependencies
 pnpm install
+pnpm exec playwright install
 
 # 3. Run tests (generates test results)
 pnpm exec allure run -- pnpm test
