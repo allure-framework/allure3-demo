@@ -19,6 +19,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
+      pull-requests: write
+      checks: write
+    env:
+      ALLURE_SERVICE_ACCESS_TOKEN: ${{ secrets.ALLURE_SERVICE_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -110,6 +114,12 @@ jobs:
 
       - name: List report files
         run: tree -a ./allure-report
+
+      - name: Allure Report Official
+        uses: allure-framework/allure-action@v0
+        with:
+          report-directory: "./allure-report"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'

@@ -1,6 +1,12 @@
 import { defineConfig } from "allure";
+import { env } from "node:process";
 
-export default defineConfig({
+const { ALLURE_SERVICE_ACCESS_TOKEN } = env;
+
+/**
+ * @type {import("allure").AllureConfig}
+ */
+const config = {
   name: "Allure 3 demo report",
   output: "./allure-report",
   historyPath: "./history.jsonl",
@@ -13,6 +19,7 @@ export default defineConfig({
         reportLanguage: "en",
         open: false,
         filter: ({ labels }) => !labels.find(({ name, value }) => name === "language" && value === "java"),
+        publish: true,
       },
     },
     awesomeE2E: {
@@ -23,6 +30,7 @@ export default defineConfig({
         reportLanguage: "en",
         open: false,
         filter: ({ labels }) => labels.find(({ name, value }) => name === "framework" && value === "playwright"),
+        publish: true,
       },
     },
     awesomeUnit: {
@@ -33,6 +41,7 @@ export default defineConfig({
         reportLanguage: "en",
         open: false,
         filter: ({ labels }) => labels.find(({ name, value }) => name === "framework" && value === "vitest"),
+        publish: true,
       },
     },
     awesomeBDD: {
@@ -44,6 +53,7 @@ export default defineConfig({
         open: false,
         groupBy: ["epic", "feature", "story"],
         filter: ({ labels }) => !labels.find(({ name, value }) => name === "language" && value === "java"),
+        publish: true,
       },
     },
     awesomeAllure2: {
@@ -54,6 +64,7 @@ export default defineConfig({
         reportLanguage: "en",
         open: false,
         filter: ({ labels }) => labels.find(({ name, value }) => name === "language" && value === "java"),
+        publish: true,
       },
     },
     dashboard: {
@@ -61,6 +72,7 @@ export default defineConfig({
         singleFile: false,
         reportName: "Dashboard",
         reportLanguage: "en",
+        publish: true,
       },
     },
     allure2: {
@@ -88,4 +100,12 @@ export default defineConfig({
       },
     },
   },
-});
+};
+
+if (ALLURE_SERVICE_ACCESS_TOKEN) {
+  config.allureService = {
+    accessToken: ALLURE_SERVICE_ACCESS_TOKEN,
+  };
+}
+
+export default defineConfig(config);
