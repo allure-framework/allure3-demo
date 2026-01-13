@@ -7,7 +7,9 @@ on:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
+  checks: write
 
 jobs:
   test:
@@ -17,8 +19,8 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
-    permissions:
-      contents: write
+    env:
+      ALLURE_SERVICE_ACCESS_TOKEN: ${{ secrets.ALLURE_SERVICE_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -65,8 +67,6 @@ jobs:
   report:
     runs-on: ubuntu-latest
     needs: test
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v6
         with:
@@ -110,6 +110,12 @@ jobs:
 
       - name: List report files
         run: tree -a ./allure-report
+
+      - name: Allure Report Official
+        uses: allure-framework/allure-action@v0
+        with:
+          report-directory: "./allure-report"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
