@@ -22,7 +22,7 @@
     "@types/d3-shape": "^3",
     "@types/node": "^22.15.24",
     "@vitest/runner": "^3.2.4",
-    "allure": "3.0.0",
+    "allure": "3.2.0",
     "allure-js-commons": "^3.3.3",
     "allure-playwright": "^3.3.3",
     "allure-vitest": "^3.3.3",
@@ -34,12 +34,17 @@
   },
   "pnpm": {
     "overrides": {
-      "axios": "^1.13.1",
+      "axios": "^1.13.5",
       "form-data": "^4.0.4",
       "glob": "^11.1.0",
       "qs": "^6.14.1",
       "preact": "^10.28.2",
-      "minimatch@^10.0.0>@isaacs/brace-expansion": "^5.0.1"
+      "minimatch@^10.0.0>@isaacs/brace-expansion": "^5.0.1",
+      "lodash@>=4.0.0 <=4.17.22": ">=4.17.23",
+      "qs@>=6.7.0 <=6.14.1": ">=6.14.2",
+      "markdown-it@>=13.0.0 <14.1.1": ">=14.1.1",
+      "minimatch@>=10.0.0 <10.2.1": ">=10.2.1",
+      "rollup@>=4.0.0 <4.59.0": ">=4.59.0"
     }
   }
 }
