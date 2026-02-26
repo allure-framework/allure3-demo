@@ -1,0 +1,102 @@
+
+> allure3-demo@1.0.0 pretest /Users/runner/work/allure3-demo/allure3-demo
+> rm -rf ./allure-results
+
+
+> allure3-demo@1.0.0 test /Users/runner/work/allure3-demo/allure3-demo
+> run-p -c 'test:*'
+
+
+> allure3-demo@1.0.0 test:allure2 /Users/runner/work/allure3-demo/allure3-demo
+> mkdir ./allure-results && cp -rf allure2-demo-test-results/* allure-results
+
+
+> allure3-demo@1.0.0 test:e2e /Users/runner/work/allure3-demo/allure3-demo
+> playwright test
+
+
+> allure3-demo@1.0.0 test:unit /Users/runner/work/allure3-demo/allure3-demo
+> vitest run ./test/unit
+
+
+[1m[46m RUN [49m[22m [36mv3.2.4 [39m[90m/Users/runner/work/allure3-demo/allure3-demo[39m
+
+
+[2mRunning [22m21[2m tests using [22m1[2m worker[22m
+
+[1A[2K[1/21] [chromium] › test/e2e/home.test.ts:15:5 › home page › theme toggler › should allow to toggle site theme
+ [31m❯[39m test/unit/index.test.ts [2m([22m[2m6 tests[22m[2m | [22m[31m3 failed[39m[2m | [22m[33m1 skipped[39m[2m)[22m[32m 157[2mms[22m[39m
+   [32m✓[39m unit tests[2m > [22mshould pass[32m 2[2mms[22m[39m
+[31m   [31m×[31m unit tests[2m > [22mshould fail[39m[32m 9[2mms[22m[39m
+[31m     → expected 1 to be 2 // Object.is equality[39m
+[31m   [31m×[31m unit tests[2m > [22mshould be broken[39m[32m 0[2mms[22m[39m
+[31m     → the break reason[39m
+   [2m[90m↓[39m[22m unit tests[2m > [22mshould be skipped[32m 0[2mms[22m[39m
+[31m   [31m×[31m unit tests[2m > [22mparent suite[2m > [22msuite[2m > [22msub suite[2m > [22mshould contain steps (actual/expected)[39m[32m 14[2mms[22m[39m
+[31m     → expected { foo: { bar: { baz: 'beep' } } } to deeply equal { baz: { bar: { foo: 'beep' } } }[39m
+   [32m✓[39m unit tests[2m > [22mshould contain different kind of attachments[32m 130[2mms[22m[39m
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m3 failed[39m[22m[2m | [22m[1m[32m2 passed[39m[22m[2m | [22m[33m1 skipped[39m[90m (6)[39m
+[2m   Start at [22m 15:19:07
+[2m   Duration [22m 5.39s[2m (transform 65ms, setup 64ms, collect 81ms, tests 157ms, environment 0ms, prepare 171ms)[22m
+
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
+[1A[2K[2/21] [chromium] › test/e2e/start.test.ts:27:5 › js › "Playwright"
+[1A[2K[3/21] [chromium] › test/e2e/start.test.ts:57:5 › ts › "Playwright"
+[1A[2K[4/21] [chromium] › test/e2e/start.test.ts:82:5 › kotlin › "JUnit5"
+[1A[2K[5/21] [chromium] › test/e2e/start.test.ts:104:5 › php › "PHPUnit"
+[1A[2K[6/21] [chromium] › test/e2e/start.test.ts:131:5 › java › "JUnit5"
+[1A[2K[7/21] [chromium] › test/e2e/start.test.ts:156:5 › csharp › "NUnit"
+[1A[2K[8/21] [firefox] › test/e2e/home.test.ts:15:5 › home page › theme toggler › should allow to toggle site theme
+[1A[2K[9/21] [firefox] › test/e2e/start.test.ts:27:5 › js › "Playwright"
+[1A[2K[10/21] [firefox] › test/e2e/start.test.ts:57:5 › ts › "Playwright"
+[1A[2K[11/21] [firefox] › test/e2e/start.test.ts:82:5 › kotlin › "JUnit5"
+[1A[2K[12/21] [firefox] › test/e2e/start.test.ts:104:5 › php › "PHPUnit"
+[1A[2K[13/21] [firefox] › test/e2e/start.test.ts:131:5 › java › "JUnit5"
+[1A[2K[14/21] [firefox] › test/e2e/start.test.ts:156:5 › csharp › "NUnit"
+[1A[2K[15/21] [safari] › test/e2e/home.test.ts:15:5 › home page › theme toggler › should allow to toggle site theme
+[1A[2K[16/21] [safari] › test/e2e/start.test.ts:27:5 › js › "Playwright"
+[1A[2K[17/21] [safari] › test/e2e/start.test.ts:57:5 › ts › "Playwright"
+[1A[2K[18/21] [safari] › test/e2e/start.test.ts:82:5 › kotlin › "JUnit5"
+[1A[2K[19/21] [safari] › test/e2e/start.test.ts:104:5 › php › "PHPUnit"
+[1A[2K[31m  1) [safari] › test/e2e/start.test.ts:104:5 › php › "PHPUnit" [2m─────────────────────────────────────[22m[39m
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for getByText('PHPUnit', { exact: true })[22m
+
+
+    [0m [90m 110 |[39m       [36mawait[39m page[33m.[39mgoto([32m"/start"[39m)[33m;[39m
+     [90m 111 |[39m       [36mawait[39m page[33m.[39mgetByText([32m"PHP"[39m)[33m.[39mclick({ force[33m:[39m [36mtrue[39m })[33m;[39m
+    [31m[1m>[22m[39m[90m 112 |[39m       [36mawait[39m page[33m.[39mgetByText(framework[33m,[39m { exact[33m:[39m [36mtrue[39m })[33m.[39mclick({ force[33m:[39m [36mtrue[39m })[33m;[39m
+     [90m     |[39m                                                        [31m[1m^[22m[39m
+     [90m 113 |[39m
+     [90m 114 |[39m       [36mconst[39m dataSets [33m=[39m [36mawait[39m startPage[33m.[39mgetTestDataSets(page)[33m;[39m
+     [90m 115 |[39m[0m
+    [2m    at /Users/runner/work/allure3-demo/allure3-demo/test/e2e/start.test.ts:112:56[22m
+
+[2m    attachment #5: [1mscreenshot[2m (image/png) [2m──────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-php-PHPUnit--safari/test-failed-1.png[22m
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+[2m    Error Context: test-results/start-php-PHPUnit--safari/error-context.md[22m
+
+[2m    attachment #7: [1mtrace[2m (application/zip) [2m─────────────────────────────────────────────────────────[2m[22m
+[2m    test-results/start-php-PHPUnit--safari/trace.zip[22m
+[2m    Usage:[22m
+
+[2m        pnpm exec playwright show-trace test-results/start-php-PHPUnit--safari/trace.zip[22m
+
+[2m    [2m────────────────────────────────────────────────────────────────────────────────────────────────[2m[22m
+
+
+[1A[2K[20/21] [safari] › test/e2e/start.test.ts:131:5 › java › "JUnit5"
+[1A[2K[21/21] [safari] › test/e2e/start.test.ts:156:5 › csharp › "NUnit"
+[1A[2K[31m  1 failed[39m
+[31m    [safari] › test/e2e/start.test.ts:104:5 › php › "PHPUnit" [2m──────────────────────────────────────[22m[39m
+[32m  20 passed[39m[2m (2.9m)[22m
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m
