@@ -13,11 +13,10 @@ Here you can see reports created by its different plugins:
 - **[plugin-allure2](https://allure-framework.github.io/allure3-demo/allure2/)**
 - **[plugin-classic](https://allure-framework.github.io/allure3-demo/classic/#behaviors)**
 
-
 ## Try out locally
 
-
 ### Prerequisites
+
 - Node.js
 - pnpm
 
@@ -42,6 +41,7 @@ pnpm exec allure open
 ### What Gets Generated
 
 After running the commands above, you'll find:
+
 - **Test results** in `./allure-results/` (raw JSON data)
 - **HTML reports** in `./allure-report/` with multiple views:
   - `awesomeAll/` - All tests combined

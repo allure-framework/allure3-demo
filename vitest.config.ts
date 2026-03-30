@@ -1,4 +1,3 @@
-import { Status } from "allure-js-commons";
 import * as os from "node:os";
 import { defineConfig } from "vitest/config";
 

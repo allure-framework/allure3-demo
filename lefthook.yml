@@ -1,0 +1,26 @@
+pre-commit:
+  jobs:
+    - name: Format code
+      glob:
+        - "*.js"
+        - "*.jsx"
+        - "*.ts"
+        - "*.tsx"
+        - "*.mjs"
+        - "*.cjs"
+        - "*.mts"
+        - "*.cts"
+        - "*.json"
+        - "*.jsonc"
+        - "*.yml"
+        - "*.yaml"
+        - "*.md"
+      run: pnpm exec oxfmt --write {staged_files}
+      exclude:
+        - "allure-results/**"
+        - "allure2-demo-test-results/**"
+        - "test-results/**"
+        - "node_modules/**"
+        - "pnpm-lock.yaml"
+        - "pnpm-workspace.yaml"
+      stage_fixed: true
