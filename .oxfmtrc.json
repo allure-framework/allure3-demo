@@ -1,0 +1,14 @@
+{
+  "trailingComma": "all",
+  "singleQuote": false,
+  "arrowParens": "always",
+  "printWidth": 120,
+  "quoteProps": "consistent",
+  "sortImports": {
+    "newlinesBetween": false,
+    "partitionByNewline": false,
+    "groups": [["builtin", "external"], ["internal", "subpath"], ["parent", "sibling", "index"], "style", "unknown"]
+  },
+  "sortPackageJson": true,
+  "ignorePatterns": ["allure-results/**", "allure2-demo-test-results/**", "test-results/**"]
+}

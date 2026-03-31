@@ -106,7 +106,6 @@ export class StartPage extends PageObject {
     return cartesianMap(metadataOptions);
   }
 
-
   async checkTestDataSets(payload: { dataSets: DataSet[]; framework: string }) {
     const { dataSets, framework } = payload;
 
@@ -136,5 +135,5 @@ export class StartPage extends PageObject {
         throw err;
       }
     }
-  };
+  }
 }
