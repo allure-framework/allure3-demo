@@ -11,7 +11,7 @@
     "format": "oxfmt --write .",
     "report:generate": "allure generate",
     "report:open": "allure open",
-    "pretest": "rm -rf ./allure-results",
+    "pretest": "rm -rf ./allure-results && playwright install chromium firefox webkit && playwright install-deps",
     "test": "run-p -c 'test:*'",
     "test:allure2": "mkdir ./allure-results && cp -rf allure2-demo-test-results/* allure-results",
     "test:e2e": "playwright test",
