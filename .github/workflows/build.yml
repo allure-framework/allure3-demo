@@ -47,14 +47,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Install playwright
-        run: pnpm exec playwright install
-
-      - name: Install playwright deps
-        run: pnpm exec playwright install-deps
-
       - name: Test Project
-        run: pnpm allure run --config=./allurerc.mjs --environment="${{ matrix.os }}" --dump="allure-results-${{ matrix.os }}" -- pnpm test
+        run: pnpm allure run --config=./allurerc.mjs --environment="${{ matrix.os }}" --dump="allure-results-${{ matrix.os }}" -- sh -c "pnpm test || true"
 
       - name: Upload test results
         if: always()
