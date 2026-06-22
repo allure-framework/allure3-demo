@@ -1,1 +1,1 @@
-{"items":[{"uid":"76dc4b018f791c7fce72fc390541a4d0","name":"Product defects","statistic":{"total":4,"failed":4}},{"uid":"492f11cc6bbeecbf8739fdcad61fa928","name":"Test defects","statistic":{"total":5,"broken":5}}],"total":2}
+{"items":[{"uid":"76dc4b018f791c7fce72fc390541a4d0","name":"Product defects","statistic":{"total":4,"failed":4}},{"uid":"492f11cc6bbeecbf8739fdcad61fa928","name":"Test defects","statistic":{"total":3,"broken":3}}],"total":2}
