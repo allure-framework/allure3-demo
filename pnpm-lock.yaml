@@ -16,12 +16,11 @@ overrides:
   handlebars@>=4.0.0 <4.7.9: '>=4.7.9'
   markdown-it@<=14.1.1: '>=14.2.0'
   picomatch@>=4.0.0 <4.0.4: '>=4.0.4'
+  esbuild@0.27.7: 0.28.1
   postcss@<8.5.10: '>=8.5.10'
   shell-quote@>=1.1.0 <=1.8.3: '>=1.8.4'
   underscore@<=1.13.7: '>=1.13.8'
-  vite@>=7.0.0 <=7.3.1: '>=7.3.2'
-  vite@>=7.0.0 <=7.3.4: '>=7.3.5'
-  vite@>=7.1.0 <=7.3.1: '>=7.3.2'
+  vite@7.2.7: 7.3.5
   yaml@>=2.0.0 <2.8.3: '>=2.8.3'
 
 importers:
@@ -51,7 +50,7 @@ importers:
         version: 3.10.0(@playwright/test@1.60.0)
       allure-vitest:
         specifier: ^3.10.0
-        version: 3.10.0(@vitest/runner@4.1.2)(allure-playwright@3.10.0(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@24.12.0)(vite@7.2.7(@types/node@24.12.0)(yaml@2.8.3)))
+        version: 3.10.0(@vitest/runner@4.1.2)(allure-playwright@3.10.0(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3)))
       d3-shape:
         specifier: ^3.2.0
         version: 3.2.0
@@ -66,7 +65,7 @@ importers:
         version: 0.42.0
       vitest:
         specifier: ^4.1.2
-        version: 4.1.2(@types/node@24.12.0)(vite@7.2.7(@types/node@24.12.0)(yaml@2.8.3))
+        version: 4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3))
 
 packages:
 
@@ -167,158 +166,158 @@ packages:
     resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
     engines: {node: '>=6.9.0'}
 
-  '@esbuild/aix-ppc64@0.25.12':
-    resolution: {integrity: sha512-Hhmwd6CInZ3dwpuGTF8fJG6yoWmsToE+vYgD4nytZVxcu1ulHpUQRAB1UJ8+N1Am3Mz4+xOByoQoSZf4D+CpkA==}
+  '@esbuild/aix-ppc64@0.28.1':
+    resolution: {integrity: sha512-Svl7tq8k/08+p6CXPpRjQ1fKX+1odH/BQbb48fV6fj3CWHhsoIOoY87w1oHXm0qEpkIK3ZfVgp0hed3XBXzXMQ==}
     engines: {node: '>=18'}
     cpu: [ppc64]
     os: [aix]
 
-  '@esbuild/android-arm64@0.25.12':
-    resolution: {integrity: sha512-6AAmLG7zwD1Z159jCKPvAxZd4y/VTO0VkprYy+3N2FtJ8+BQWFXU+OxARIwA46c5tdD9SsKGZ/1ocqBS/gAKHg==}
+  '@esbuild/android-arm64@0.28.1':
+    resolution: {integrity: sha512-34EGEbCIAgosYz6goLcopX6Mo7NyGv9tfwEM2/7Ce2VcVRk568iSvniGWcUXIy7wEDR1wzolcxcriFVrWYcwBg==}
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [android]
 
-  '@esbuild/android-arm@0.25.12':
-    resolution: {integrity: sha512-VJ+sKvNA/GE7Ccacc9Cha7bpS8nyzVv0jdVgwNDaR4gDMC/2TTRc33Ip8qrNYUcpkOHUT5OZ0bUcNNVZQ9RLlg==}
+  '@esbuild/android-arm@0.28.1':
+    resolution: {integrity: sha512-0k2F129Xdio1TdJfzJ8sy1Q47vUD2NnwdhiAf7drUN1EBTfPf4hsFCtmMgu/6m8JSzsBrlmVjudMBQqOfG8usQ==}
     engines: {node: '>=18'}
     cpu: [arm]
     os: [android]
 
-  '@esbuild/android-x64@0.25.12':
-    resolution: {integrity: sha512-5jbb+2hhDHx5phYR2By8GTWEzn6I9UqR11Kwf22iKbNpYrsmRB18aX/9ivc5cabcUiAT/wM+YIZ6SG9QO6a8kg==}
+  '@esbuild/android-x64@0.28.1':
+    resolution: {integrity: sha512-dbwY7ltSMDWsRatcRpCnES4F+im88OCUgGZjy52shC7GqHRE/cYlxNbB4Z4UpJswpcc4Qxd2oE/ufM0p61IKng==}
     engines: {node: '>=18'}
     cpu: [x64]
     os: [android]
 
-  '@esbuild/darwin-arm64@0.25.12':
-    resolution: {integrity: sha512-N3zl+lxHCifgIlcMUP5016ESkeQjLj/959RxxNYIthIg+CQHInujFuXeWbWMgnTo4cp5XVHqFPmpyu9J65C1Yg==}
+  '@esbuild/darwin-arm64@0.28.1':
+    resolution: {integrity: sha512-TZbWkQY7kvTAXbXUT7uVACR5cMHsDiSz9z7ZKAX/RTq/WJEk3QyRr0wZpNhBDX+/0CtdqUIJlOiodQcta6tY3Q==}
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [darwin]
 
-  '@esbuild/darwin-x64@0.25.12':
-    resolution: {integrity: sha512-HQ9ka4Kx21qHXwtlTUVbKJOAnmG1ipXhdWTmNXiPzPfWKpXqASVcWdnf2bnL73wgjNrFXAa3yYvBSd9pzfEIpA==}
+  '@esbuild/darwin-x64@0.28.1':
+    resolution: {integrity: sha512-zfdzgK9ACBNZLI/CyHTOx81SyNbM6YXn7rxSgX97VjyiPl9W1i4Ka4fgKECEoFCKGpvBj5qArWIGgQjOwkgskQ==}
     engines: {node: '>=18'}
     cpu: [x64]
     os: [darwin]
 
-  '@esbuild/freebsd-arm64@0.25.12':
-    resolution: {integrity: sha512-gA0Bx759+7Jve03K1S0vkOu5Lg/85dou3EseOGUes8flVOGxbhDDh/iZaoek11Y8mtyKPGF3vP8XhnkDEAmzeg==}
+  '@esbuild/freebsd-arm64@0.28.1':
+    resolution: {integrity: sha512-wG2EA8ENdEI0qhkSZMjfqrdY+ziCYCPMmtZjjIwOmXFjmyzEHn+UUxk5of+SYsjtfs3VpnlC7QLzSI5hY/rOAw==}
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [freebsd]
 
-  '@esbuild/freebsd-x64@0.25.12':
-    resolution: {integrity: sha512-TGbO26Yw2xsHzxtbVFGEXBFH0FRAP7gtcPE7P5yP7wGy7cXK2oO7RyOhL5NLiqTlBh47XhmIUXuGciXEqYFfBQ==}
+  '@esbuild/freebsd-x64@0.28.1':
+    resolution: {integrity: sha512-i7dZ9vQgnvSCzi/rYCXNgtF/U+eKZNJBzu3eTQbRgHnM7tNSizLOkRFAl3qzVc/Op/u5YkHHa4pf/3DOYHthLQ==}
     engines: {node: '>=18'}
     cpu: [x64]
     os: [freebsd]
 
-  '@esbuild/linux-arm64@0.25.12':
-    resolution: {integrity: sha512-8bwX7a8FghIgrupcxb4aUmYDLp8pX06rGh5HqDT7bB+8Rdells6mHvrFHHW2JAOPZUbnjUpKTLg6ECyzvas2AQ==}
+  '@esbuild/linux-arm64@0.28.1':
+    resolution: {integrity: sha512-yHs+0uc8+nvEAfAfxrWQKK5peSNzBc4PegcMO0EJ2hT71uA7vB8Ihg2e77R2P7SG5uYjPbHlLLmve4LLLRCf0g==}
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [linux]
 
-  '@esbuild/linux-arm@0.25.12':
-    resolution: {integrity: sha512-lPDGyC1JPDou8kGcywY0YILzWlhhnRjdof3UlcoqYmS9El818LLfJJc3PXXgZHrHCAKs/Z2SeZtDJr5MrkxtOw==}
+  '@esbuild/linux-arm@0.28.1':
+    resolution: {integrity: sha512-qVXBOHQS+d5Y722GwJzJUtOLlX7km3CraOaGormF1pDtPd2C/l1SHRPgjLunLGe51Sh5YYWKMFDyV4SxgMQYTQ==}
     engines: {node: '>=18'}
     cpu: [arm]
     os: [linux]
 
-  '@esbuild/linux-ia32@0.25.12':
-    resolution: {integrity: sha512-0y9KrdVnbMM2/vG8KfU0byhUN+EFCny9+8g202gYqSSVMonbsCfLjUO+rCci7pM0WBEtz+oK/PIwHkzxkyharA==}
+  '@esbuild/linux-ia32@0.28.1':
+    resolution: {integrity: sha512-d1z4ZuP0ajrfz/FhGT4vv278rX8KnPPJx8i5+AtK7TYbx9Le9F1hyzurZpkEyjkGa9dUGhQow4C1NmeGvqxN2w==}
     engines: {node: '>=18'}
     cpu: [ia32]
     os: [linux]
 
-  '@esbuild/linux-loong64@0.25.12':
-    resolution: {integrity: sha512-h///Lr5a9rib/v1GGqXVGzjL4TMvVTv+s1DPoxQdz7l/AYv6LDSxdIwzxkrPW438oUXiDtwM10o9PmwS/6Z0Ng==}
+  '@esbuild/linux-loong64@0.28.1':
+    resolution: {integrity: sha512-M5sRjUVZrkm1OAPR3dlOYzNmN+loZKGVi1VUQGrwuqLcbR6qeAz+famMhjASeH3YVKvZz+zT1jlh/keC3Rj/lg==}
     engines: {node: '>=18'}
     cpu: [loong64]
     os: [linux]
 
-  '@esbuild/linux-mips64el@0.25.12':
-    resolution: {integrity: sha512-iyRrM1Pzy9GFMDLsXn1iHUm18nhKnNMWscjmp4+hpafcZjrr2WbT//d20xaGljXDBYHqRcl8HnxbX6uaA/eGVw==}
+  '@esbuild/linux-mips64el@0.28.1':
+    resolution: {integrity: sha512-mRObBZeHh2OxcBFPWE/FjylkRgZdYuiTR3vaTozquCGOH14iP9oN4x4Ge81CoIDYQrXmIxpFumJBu5MtZpnQJQ==}
     engines: {node: '>=18'}
     cpu: [mips64el]
     os: [linux]
 
-  '@esbuild/linux-ppc64@0.25.12':
-    resolution: {integrity: sha512-9meM/lRXxMi5PSUqEXRCtVjEZBGwB7P/D4yT8UG/mwIdze2aV4Vo6U5gD3+RsoHXKkHCfSxZKzmDssVlRj1QQA==}
+  '@esbuild/linux-ppc64@0.28.1':
+    resolution: {integrity: sha512-slScBsMAb3GFDcdrCgLwZtPYRoH2H/youv10QiZyRjmsP48fznoveWytSgCI/R0ZcUgpc0ZhIUEx6LHts8yrfQ==}
     engines: {node: '>=18'}
     cpu: [ppc64]
     os: [linux]
 
-  '@esbuild/linux-riscv64@0.25.12':
-    resolution: {integrity: sha512-Zr7KR4hgKUpWAwb1f3o5ygT04MzqVrGEGXGLnj15YQDJErYu/BGg+wmFlIDOdJp0PmB0lLvxFIOXZgFRrdjR0w==}
+  '@esbuild/linux-riscv64@0.28.1':
+    resolution: {integrity: sha512-kw0owk1o0GFETUJyW0jc0G4Yzs0BHZn0JDZ8JRT088vjJYX777BAs1fDGxAC+q831qOs2DTC96mNsG2opdfyyQ==}
     engines: {node: '>=18'}
     cpu: [riscv64]
     os: [linux]
 
-  '@esbuild/linux-s390x@0.25.12':
-    resolution: {integrity: sha512-MsKncOcgTNvdtiISc/jZs/Zf8d0cl/t3gYWX8J9ubBnVOwlk65UIEEvgBORTiljloIWnBzLs4qhzPkJcitIzIg==}
+  '@esbuild/linux-s390x@0.28.1':
+    resolution: {integrity: sha512-/lAIjX8aYFRByhh6L5rYtPEDRqa9de/4V/juOXcta5frjvzXO4/sqEtyytse0g3zZFuWu5cDN0MkLz2qRDD2Ag==}
     engines: {node: '>=18'}
     cpu: [s390x]
     os: [linux]
 
-  '@esbuild/linux-x64@0.25.12':
-    resolution: {integrity: sha512-uqZMTLr/zR/ed4jIGnwSLkaHmPjOjJvnm6TVVitAa08SLS9Z0VM8wIRx7gWbJB5/J54YuIMInDquWyYvQLZkgw==}
+  '@esbuild/linux-x64@0.28.1':
+    resolution: {integrity: sha512-u/anNYF2mmVOEDwLtnQ1wOr3EZ9sTNGLWrsYGYwHWzGA3Si84IOkHXlbWTD1NB+9/1lcnweYKO54uhxZydNzfA==}
     engines: {node: '>=18'}
     cpu: [x64]
     os: [linux]
 
-  '@esbuild/netbsd-arm64@0.25.12':
-    resolution: {integrity: sha512-xXwcTq4GhRM7J9A8Gv5boanHhRa/Q9KLVmcyXHCTaM4wKfIpWkdXiMog/KsnxzJ0A1+nD+zoecuzqPmCRyBGjg==}
+  '@esbuild/netbsd-arm64@0.28.1':
+    resolution: {integrity: sha512-oks0DYbLwWMmaakTsCb+zL4E+aHRVLom9IJZOAthMQEPiQmydXHkziYEsGYRx0uNV/IjEKGAV941JzH02pflqw==}
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [netbsd]
 
-  '@esbuild/netbsd-x64@0.25.12':
-    resolution: {integrity: sha512-Ld5pTlzPy3YwGec4OuHh1aCVCRvOXdH8DgRjfDy/oumVovmuSzWfnSJg+VtakB9Cm0gxNO9BzWkj6mtO1FMXkQ==}
+  '@esbuild/netbsd-x64@0.28.1':
+    resolution: {integrity: sha512-aeL6lAnN89Hz43Mlh1G8ARasbuoYvSITDEx0tHh5b7jJnHcssqgjy9Yx430GDpmCa6OyrKoS0aNRjKundRizGg==}
     engines: {node: '>=18'}
     cpu: [x64]
     os: [netbsd]
 
-  '@esbuild/openbsd-arm64@0.25.12':
-    resolution: {integrity: sha512-fF96T6KsBo/pkQI950FARU9apGNTSlZGsv1jZBAlcLL1MLjLNIWPBkj5NlSz8aAzYKg+eNqknrUJ24QBybeR5A==}
+  '@esbuild/openbsd-arm64@0.28.1':
+    resolution: {integrity: sha512-MEFJe5C3R8pwXdZ5Y21oo6m7ePiS0d9pWucn99O/wvyJZChoIQKrQDxKrGeW8F5+T0okTHesAmDeiHDTIq0V/Q==}
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [openbsd]
 
-  '@esbuild/openbsd-x64@0.25.12':
-    resolution: {integrity: sha512-MZyXUkZHjQxUvzK7rN8DJ3SRmrVrke8ZyRusHlP+kuwqTcfWLyqMOE3sScPPyeIXN/mDJIfGXvcMqCgYKekoQw==}
+  '@esbuild/openbsd-x64@0.28.1':
+    resolution: {integrity: sha512-i/ZLIOafE0Z8cI/XANJAixoJL/uRAoS2xOA3rb0xN+KK0K177cMAsQYkzHtBrtMXAKuAc7HGgcWiZ/sRC1Nxgw==}
     engines: {node: '>=18'}
     cpu: [x64]
     os: [openbsd]
 
-  '@esbuild/openharmony-arm64@0.25.12':
-    resolution: {integrity: sha512-rm0YWsqUSRrjncSXGA7Zv78Nbnw4XL6/dzr20cyrQf7ZmRcsovpcRBdhD43Nuk3y7XIoW2OxMVvwuRvk9XdASg==}
+  '@esbuild/openharmony-arm64@0.28.1':
+    resolution: {integrity: sha512-ge+Z7EXFNt2BO1oAMsVpiQ8EwndV9i1xXerAeTIK7AtPs3bKFXQM7nlRxDSIUIMeueR1CNXxqztLzdNeReKBJg==}
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [openharmony]
 
-  '@esbuild/sunos-x64@0.25.12':
-    resolution: {integrity: sha512-3wGSCDyuTHQUzt0nV7bocDy72r2lI33QL3gkDNGkod22EsYl04sMf0qLb8luNKTOmgF/eDEDP5BFNwoBKH441w==}
+  '@esbuild/sunos-x64@0.28.1':
+    resolution: {integrity: sha512-BEjgtECkL3vY+SaSQ6nzVfiALUeFxpawyp8Jmf5PtYhf1Ug40N1h/hxlhts+f1FvSvarEigdxS3BlSMI2PJLcQ==}
     engines: {node: '>=18'}
     cpu: [x64]
     os: [sunos]
 
-  '@esbuild/win32-arm64@0.25.12':
-    resolution: {integrity: sha512-rMmLrur64A7+DKlnSuwqUdRKyd3UE7oPJZmnljqEptesKM8wx9J8gx5u0+9Pq0fQQW8vqeKebwNXdfOyP+8Bsg==}
+  '@esbuild/win32-arm64@0.28.1':
+    resolution: {integrity: sha512-lCv9eK/H6ZJWbE7bh2nw54CZ9M2nupBxJcTsdk/QQnWkdSjKGuxmmH8/GWrlT1eMmZfn4dGcCjRte397WqfQXA==}
     engines: {node: '>=18'}
     cpu: [arm64]
     os: [win32]
 
-  '@esbuild/win32-ia32@0.25.12':
-    resolution: {integrity: sha512-HkqnmmBoCbCwxUKKNPBixiWDGCpQGVsrQfJoVGYLPT41XWF8lHuE5N6WhVia2n4o5QK5M4tYr21827fNhi4byQ==}
+  '@esbuild/win32-ia32@0.28.1':
+    resolution: {integrity: sha512-zvb/mB2bSCoJOpoCBgYKKpX6YM6mJBlBUVUtVj41DlZJVEB6/0CKlRYxP5wWl1C1ILiCoAU5wZZ4q1P3qeS6Eg==}
     engines: {node: '>=18'}
     cpu: [ia32]
     os: [win32]
 
-  '@esbuild/win32-x64@0.25.12':
-    resolution: {integrity: sha512-alJC0uCZpTFrSL0CCDjcgleBXPnCrEAhTBILpeAp7M/OFgoqtAetfBzX0xM00MUsVVPpVjlPuMbREqnZCXaTnA==}
+  '@esbuild/win32-x64@0.28.1':
+    resolution: {integrity: sha512-bm4Mowrv+GXMlpWX++EcXw/iLyd1o3+bJkC2DkWXYVvgZCqD/bSj9ctZeAMC3cIxgjRVR2Dufaiu4YPxr5gW1A==}
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
@@ -556,6 +555,11 @@ packages:
     peerDependencies:
       preact: '*'
 
+  '@preact/compat@18.3.2':
+    resolution: {integrity: sha512-5vSl55K5yLMvocT7PBKxDOHGgYPjMrKQqqr6roSNjIXcJOtSgDDMjpiCAF3s7klRdmGrN75b/Przmjw8gmlg/w==}
+    peerDependencies:
+      preact: '*'
+
   '@preact/signals-core@1.13.0':
     resolution: {integrity: sha512-slT6XeTCAbdql61GVLlGU4x7XHI7kCZV5Um5uhE4zLX4ApgiiXc0UYFvVOKq06xcovzp7p+61l68oPi563ARKg==}
 
@@ -591,141 +595,141 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@rollup/rollup-android-arm-eabi@4.59.0':
-    resolution: {integrity: sha512-upnNBkA6ZH2VKGcBj9Fyl9IGNPULcjXRlg0LLeaioQWueH30p6IXtJEbKAgvyv+mJaMxSm1l6xwDXYjpEMiLMg==}
+  '@rollup/rollup-android-arm-eabi@4.62.2':
+    resolution: {integrity: sha512-6o7ZLZK+BeenkZCFNDXqpbjw9bD6nuWonvS/lwQJp7NoVVxm6p3qE7qQ5jGuBjiFsgvqjD8mZAU5oWxTmbOeOg==}
     cpu: [arm]
     os: [android]
 
-  '@rollup/rollup-android-arm64@4.59.0':
-    resolution: {integrity: sha512-hZ+Zxj3SySm4A/DylsDKZAeVg0mvi++0PYVceVyX7hemkw7OreKdCvW2oQ3T1FMZvCaQXqOTHb8qmBShoqk69Q==}
+  '@rollup/rollup-android-arm64@4.62.2':
+    resolution: {integrity: sha512-BaH7BllCACHoH1LguOU56UItGfUWjujlO65kS9LAodViaN4bwIKd7oeW/ZHJ/4ljr/7MIiENnNy3HJ0zXv8Zkw==}
     cpu: [arm64]
     os: [android]
 
-  '@rollup/rollup-darwin-arm64@4.59.0':
-    resolution: {integrity: sha512-W2Psnbh1J8ZJw0xKAd8zdNgF9HRLkdWwwdWqubSVk0pUuQkoHnv7rx4GiF9rT4t5DIZGAsConRE3AxCdJ4m8rg==}
+  '@rollup/rollup-darwin-arm64@4.62.2':
+    resolution: {integrity: sha512-v39RCCvj4He82I9sFmk+M1VZ0PLM9sfsLVikjfx2hYBNALhrrOR2D3JjQA6AhlaSOgcR+RzrKY7e1+bT6SUO/A==}
     cpu: [arm64]
     os: [darwin]
 
-  '@rollup/rollup-darwin-x64@4.59.0':
-    resolution: {integrity: sha512-ZW2KkwlS4lwTv7ZVsYDiARfFCnSGhzYPdiOU4IM2fDbL+QGlyAbjgSFuqNRbSthybLbIJ915UtZBtmuLrQAT/w==}
+  '@rollup/rollup-darwin-x64@4.62.2':
+    resolution: {integrity: sha512-yl0y2vq3S3lHeuXhEdss6TWfKW8vkujImO12tn4ZkG/4oghr09LvdYm2RElVjokTQiUvDUGXLGsYeLqUMCKpGA==}
     cpu: [x64]
     os: [darwin]
 
-  '@rollup/rollup-freebsd-arm64@4.59.0':
-    resolution: {integrity: sha512-EsKaJ5ytAu9jI3lonzn3BgG8iRBjV4LxZexygcQbpiU0wU0ATxhNVEpXKfUa0pS05gTcSDMKpn3Sx+QB9RlTTA==}
+  '@rollup/rollup-freebsd-arm64@4.62.2':
+    resolution: {integrity: sha512-tT4pvt4qXD+vEoezupCWi+a1F0vvDiksiHc+PxRlYTOH1I6/X4id9jPxTP+Fg+545euaFT1jJVs4CEdHZAU1vw==}
     cpu: [arm64]
     os: [freebsd]
 
-  '@rollup/rollup-freebsd-x64@4.59.0':
-    resolution: {integrity: sha512-d3DuZi2KzTMjImrxoHIAODUZYoUUMsuUiY4SRRcJy6NJoZ6iIqWnJu9IScV9jXysyGMVuW+KNzZvBLOcpdl3Vg==}
+  '@rollup/rollup-freebsd-x64@4.62.2':
+    resolution: {integrity: sha512-6nU5F2wCW+qvCBhTn1pdIU3bzsIoF7EUwsCDRxilWGprQR6yd508YnH9+OKFCwpfS8pjZqDUmnCAr7exax0XCg==}
     cpu: [x64]
     os: [freebsd]
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.59.0':
-    resolution: {integrity: sha512-t4ONHboXi/3E0rT6OZl1pKbl2Vgxf9vJfWgmUoCEVQVxhW6Cw/c8I6hbbu7DAvgp82RKiH7TpLwxnJeKv2pbsw==}
+  '@rollup/rollup-linux-arm-gnueabihf@4.62.2':
+    resolution: {integrity: sha512-n1GJHPOvpIfhi3TmrCeh6S6URt9BFCt0KQE3qvexyGCTAKpR4Lg+eWvNZEqu7epxwus/8ElT3hacYEucm49SZg==}
     cpu: [arm]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-arm-musleabihf@4.59.0':
-    resolution: {integrity: sha512-CikFT7aYPA2ufMD086cVORBYGHffBo4K8MQ4uPS/ZnY54GKj36i196u8U+aDVT2LX4eSMbyHtyOh7D7Zvk2VvA==}
+  '@rollup/rollup-linux-arm-musleabihf@4.62.2':
+    resolution: {integrity: sha512-JqgflS8wEB+UXV/vS1RpRbifGBeN4D5lz8D8oOFbFZw4vedvdOgCFAjfBmIMdW3yL10XpQQ0Ambepw6MXrhOnA==}
     cpu: [arm]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-arm64-gnu@4.59.0':
-    resolution: {integrity: sha512-jYgUGk5aLd1nUb1CtQ8E+t5JhLc9x5WdBKew9ZgAXg7DBk0ZHErLHdXM24rfX+bKrFe+Xp5YuJo54I5HFjGDAA==}
+  '@rollup/rollup-linux-arm64-gnu@4.62.2':
+    resolution: {integrity: sha512-wnFJkogWvN4jm/hQRF2UBaeUmk20j5+DmHvoyWii2b8HJDyvz1MF2OU/6ynXt2KR63rbZLWkFpoytpdc/yBuSA==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-arm64-musl@4.59.0':
-    resolution: {integrity: sha512-peZRVEdnFWZ5Bh2KeumKG9ty7aCXzzEsHShOZEFiCQlDEepP1dpUl/SrUNXNg13UmZl+gzVDPsiCwnV1uI0RUA==}
+  '@rollup/rollup-linux-arm64-musl@4.62.2':
+    resolution: {integrity: sha512-HVu2bp0zhvJ8xHEV9+UUs7S90VadmBSY3LcIMvozbPo4AuMGDWlz3ymHLHZPX4hR67TKTt8Qp5PJ5RBg/i+RMQ==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-loong64-gnu@4.59.0':
-    resolution: {integrity: sha512-gbUSW/97f7+r4gHy3Jlup8zDG190AuodsWnNiXErp9mT90iCy9NKKU0Xwx5k8VlRAIV2uU9CsMnEFg/xXaOfXg==}
+  '@rollup/rollup-linux-loong64-gnu@4.62.2':
+    resolution: {integrity: sha512-mQqqAV8QaoSgr9I2fKDLY2BAVvmKjWoGiu/cSYQonsLvtqwEn1E4QYfnCOcp5zoEqNhsDYin1s6jx/VJmrxlZg==}
     cpu: [loong64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-loong64-musl@4.59.0':
-    resolution: {integrity: sha512-yTRONe79E+o0FWFijasoTjtzG9EBedFXJMl888NBEDCDV9I2wGbFFfJQQe63OijbFCUZqxpHz1GzpbtSFikJ4Q==}
+  '@rollup/rollup-linux-loong64-musl@4.62.2':
+    resolution: {integrity: sha512-IxKLoxCQ2IWi6bT2akyDUBGsOImDKB+sPp4EsTmwFQ/fMwpCKm8uLSSgP/Kx/QYUgKis6SEZ5/Nlhup0DIA0PQ==}
     cpu: [loong64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-ppc64-gnu@4.59.0':
-    resolution: {integrity: sha512-sw1o3tfyk12k3OEpRddF68a1unZ5VCN7zoTNtSn2KndUE+ea3m3ROOKRCZxEpmT9nsGnogpFP9x6mnLTCaoLkA==}
+  '@rollup/rollup-linux-ppc64-gnu@4.62.2':
+    resolution: {integrity: sha512-Mk5ha2RQSgyFfmYYLkBpPnUk8D8FriBxesO1u9O75X0mHgXL1UQcH5Itl2lurWL2tj0RxV9b9tJgipac0hRY9A==}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-ppc64-musl@4.59.0':
-    resolution: {integrity: sha512-+2kLtQ4xT3AiIxkzFVFXfsmlZiG5FXYW7ZyIIvGA7Bdeuh9Z0aN4hVyXS/G1E9bTP/vqszNIN/pUKCk/BTHsKA==}
+  '@rollup/rollup-linux-ppc64-musl@4.62.2':
+    resolution: {integrity: sha512-CjvEnqJL/0/TQ3TXX3OPIJ/kmBellrWd4heXUmHeJlTnmwjKpSJzoehLaL6Xk0ZnMHBu9dZuFADNOrtjF4v+2w==}
     cpu: [ppc64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-riscv64-gnu@4.59.0':
-    resolution: {integrity: sha512-NDYMpsXYJJaj+I7UdwIuHHNxXZ/b/N2hR15NyH3m2qAtb/hHPA4g4SuuvrdxetTdndfj9b1WOmy73kcPRoERUg==}
+  '@rollup/rollup-linux-riscv64-gnu@4.62.2':
+    resolution: {integrity: sha512-1SiZbzwdkaDURsew/tSOrooKiYy7EQGT6m8ufavAi9NEyQb/6VuIxFXAL1fqa4iZe3g4NbNk4P7J32z2tw5Mgg==}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-riscv64-musl@4.59.0':
-    resolution: {integrity: sha512-nLckB8WOqHIf1bhymk+oHxvM9D3tyPndZH8i8+35p/1YiVoVswPid2yLzgX7ZJP0KQvnkhM4H6QZ5m0LzbyIAg==}
+  '@rollup/rollup-linux-riscv64-musl@4.62.2':
+    resolution: {integrity: sha512-nQts12zJ3NQRoE6uYljOH89v7szzLDvG2JD/vsX+vGXU8w/At1GowTZ5/7qeFQ8m7L55rpR8Okugnuo5bgjy2Q==}
     cpu: [riscv64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-linux-s390x-gnu@4.59.0':
-    resolution: {integrity: sha512-oF87Ie3uAIvORFBpwnCvUzdeYUqi2wY6jRFWJAy1qus/udHFYIkplYRW+wo+GRUP4sKzYdmE1Y3+rY5Gc4ZO+w==}
+  '@rollup/rollup-linux-s390x-gnu@4.62.2':
+    resolution: {integrity: sha512-E9/ll019jhPIJgpzfZoIkBGhcz+kKNgVWYRY0zr9srBdPPFVpvOKW8VaJKUbeK+eZXyQF9ltME+Kk6affeaPgg==}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-x64-gnu@4.59.0':
-    resolution: {integrity: sha512-3AHmtQq/ppNuUspKAlvA8HtLybkDflkMuLK4DPo77DfthRb71V84/c4MlWJXixZz4uruIH4uaa07IqoAkG64fg==}
+  '@rollup/rollup-linux-x64-gnu@4.62.2':
+    resolution: {integrity: sha512-5BqxR/pshjey51iliyzTD5Xi3EN0aLmQ2lZ3lvefVV9c82BvrLo2/6OT55iifpWBufs6kdwWbuOKS841DrmK9A==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rollup/rollup-linux-x64-musl@4.59.0':
-    resolution: {integrity: sha512-2UdiwS/9cTAx7qIUZB/fWtToJwvt0Vbo0zmnYt7ED35KPg13Q0ym1g442THLC7VyI6JfYTP4PiSOWyoMdV2/xg==}
+  '@rollup/rollup-linux-x64-musl@4.62.2':
+    resolution: {integrity: sha512-uNN83XxQrRAh/w0/pmAfibcwyb6YWt4gP+dpnQKPVJshAloQ785ii8CT8ZCIxkGg9opVsvAlGhFitSm6D1Jjpg==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rollup/rollup-openbsd-x64@4.59.0':
-    resolution: {integrity: sha512-M3bLRAVk6GOwFlPTIxVBSYKUaqfLrn8l0psKinkCFxl4lQvOSz8ZrKDz2gxcBwHFpci0B6rttydI4IpS4IS/jQ==}
+  '@rollup/rollup-openbsd-x64@4.62.2':
+    resolution: {integrity: sha512-srjEIxSH3LRnJN6THczDHWQplqEMFiAJrTab0msUryh9kwNpkICf3Ea6q6MN/2cZwRFUNx5w+h6Hpi4QuHS6Zg==}
     cpu: [x64]
     os: [openbsd]
 
-  '@rollup/rollup-openharmony-arm64@4.59.0':
-    resolution: {integrity: sha512-tt9KBJqaqp5i5HUZzoafHZX8b5Q2Fe7UjYERADll83O4fGqJ49O1FsL6LpdzVFQcpwvnyd0i+K/VSwu/o/nWlA==}
+  '@rollup/rollup-openharmony-arm64@4.62.2':
+    resolution: {integrity: sha512-8hOJnxgbyObnCm5AlRA3A931xX19xq80RjVTKgJOvEKWqJruP/Uf12IbAOaDjjEXYRewwHLfmF0YRIdK3OwKWA==}
     cpu: [arm64]
     os: [openharmony]
 
-  '@rollup/rollup-win32-arm64-msvc@4.59.0':
-    resolution: {integrity: sha512-V5B6mG7OrGTwnxaNUzZTDTjDS7F75PO1ae6MJYdiMu60sq0CqN5CVeVsbhPxalupvTX8gXVSU9gq+Rx1/hvu6A==}
+  '@rollup/rollup-win32-arm64-msvc@4.62.2':
+    resolution: {integrity: sha512-mmF4AY1i0hG/bLWUctUq59gtmgaSIRa3cu/A3JFRp/sCNEme2bgDEiDS22P9FbnJB8NJNF4jPJiSP5RHQpUTDg==}
     cpu: [arm64]
     os: [win32]
 
-  '@rollup/rollup-win32-ia32-msvc@4.59.0':
-    resolution: {integrity: sha512-UKFMHPuM9R0iBegwzKF4y0C4J9u8C6MEJgFuXTBerMk7EJ92GFVFYBfOZaSGLu6COf7FxpQNqhNS4c4icUPqxA==}
+  '@rollup/rollup-win32-ia32-msvc@4.62.2':
+    resolution: {integrity: sha512-DZgkknc6jhHrk46V25vbAM0zZkyP0nSDkJB8/dRkLTxv470dOmWDqGoEJl/9A0dFfS7yE3REOwNDxpHwSLSt0Q==}
     cpu: [ia32]
     os: [win32]
 
-  '@rollup/rollup-win32-x64-gnu@4.59.0':
-    resolution: {integrity: sha512-laBkYlSS1n2L8fSo1thDNGrCTQMmxjYY5G0WFWjFFYZkKPjsMBsgJfGf4TLxXrF6RyhI60L8TMOjBMvXiTcxeA==}
+  '@rollup/rollup-win32-x64-gnu@4.62.2':
+    resolution: {integrity: sha512-T6xr6ucWSFto+VGajA8YH26LdpHRuP4YLHEKAtCWvJDOlnmWcDZVCI2Jmjr+IFHDlt2zRaTAKE4tfjTaWLgJBg==}
     cpu: [x64]
     os: [win32]
 
-  '@rollup/rollup-win32-x64-msvc@4.59.0':
-    resolution: {integrity: sha512-2HRCml6OztYXyJXAvdDXPKcawukWY2GpR5/nxKp4iBgiO3wcoEGkAaqctIbZcNB6KlUQBIqt8VYkNSj2397EfA==}
+  '@rollup/rollup-win32-x64-msvc@4.62.2':
+    resolution: {integrity: sha512-BfzEnDJOt9T8M989/lA37EcJgat01wLRnoi5dQf3QzOH7jzpqTAzdDbVfRljVr5r+jzKqpbHeyOfAaXxAd0PAA==}
     cpu: [x64]
     os: [win32]
 
@@ -777,8 +781,8 @@ packages:
   '@types/deep-eql@4.0.2':
     resolution: {integrity: sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==}
 
-  '@types/estree@1.0.8':
-    resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
+  '@types/estree@1.0.9':
+    resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
   '@types/node@24.12.0':
     resolution: {integrity: sha512-GYDxsZi3ChgmckRT9HPU0WEhKLP08ev/Yfcq2AstjrDASOYCSXeyjDsHg4v5t4jOj7cyDX3vmprafKlWIG9MXQ==}
@@ -793,7 +797,7 @@ packages:
     resolution: {integrity: sha512-Ize4iQtEALHDttPRCmN+FKqOl2vxTiNUhzobQFFt/BM1lRUTG7zRCLOykG/6Vo4E4hnUdfVLo5/eqKPukcWW7Q==}
     peerDependencies:
       msw: ^2.4.9
-      vite: '>=7.3.2'
+      vite: 7.3.5
     peerDependenciesMeta:
       msw:
         optional: true
@@ -1104,8 +1108,8 @@ packages:
     resolution: {integrity: sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==}
     engines: {node: '>= 0.4'}
 
-  es-module-lexer@2.0.0:
-    resolution: {integrity: sha512-5POEcUuZybH7IdmGsD8wlf0AI55wMecM9rVBTI/qEAy2c1kTOm3DjFYjrBdI2K3BaJjJYfYFeRtM0t9ssnRuxw==}
+  es-module-lexer@2.1.0:
+    resolution: {integrity: sha512-n27zTYMjYu1aj4MjCWzSP7G9r75utsaoc8m61weK+W8JMBGGQybd43GstCXZ3WNmSFtGT9wi59qQTW6mhTR5LQ==}
 
   es-object-atoms@1.1.1:
     resolution: {integrity: sha512-FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm+c2gQSYePhpaG5+esrLODihIorn+Pe6FGJzWhXQotPv73jTaldXA==}
@@ -1115,8 +1119,8 @@ packages:
     resolution: {integrity: sha512-j6vWzfrGVfyXxge+O0x5sh6cvxAog0a/4Rdd2K36zCMV5eJ+/+tOAngRO8cODMNWbVRdVlmGZQL2YS3yR8bIUA==}
     engines: {node: '>= 0.4'}
 
-  esbuild@0.25.12:
-    resolution: {integrity: sha512-bbPBYYrtZbkt6Os6FiTLCTFxvq4tt3JKall1vRwshA3fdVztsLAatFaZobhkBC8/BrPetoa0oksYoKXoG4ryJg==}
+  esbuild@0.28.1:
+    resolution: {integrity: sha512-HrJrvZv5ayxBzPfwphOoNzkzOIIlifzk0KJrGK2c8R4+LKpMtpYLQeUdjnwjWv/LZlkH2laZk+4w78pi99D4Vw==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1422,8 +1426,9 @@ packages:
     engines: {node: ^20.5.0 || >=22.0.0, npm: '>= 10'}
     hasBin: true
 
-  obug@2.1.1:
-    resolution: {integrity: sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ==}
+  obug@2.1.3:
+    resolution: {integrity: sha512-9miFgM2OFba7hB+pRgvtV84pYTBaoTHohvmIgiRt6dRIzbwEOIaNaP+dIlGs2fNFoB0SeISs0Jz5WFVRid6Xyg==}
+    engines: {node: '>=12.20.0'}
 
   open@10.2.0:
     resolution: {integrity: sha512-YgBpdJHPyQ2UE5x+hlSXcnejzAvD0b22U2OuAP+8OnlJT+PjWPxtgmGqKKc+RgTM63U9gN0YzrYc71R2WT/hTA==}
@@ -1535,8 +1540,8 @@ packages:
   robust-predicates@3.0.2:
     resolution: {integrity: sha512-IXgzBWvWQwE6PrDI05OvmXUIruQTcoMDzRsOd5CDvHCVLcLHMTSYvOK5Cm46kWqlV3yAbuSpBZdJ5oP5OUoStg==}
 
-  rollup@4.59.0:
-    resolution: {integrity: sha512-2oMpl67a3zCH9H79LeMcbDhXW/UmWG/y2zuqnF2jQq5uq9TbM9TVyXvA4+t+ne2IIkBdrLpAaRQAvo7YI/Yyeg==}
+  rollup@4.62.2:
+    resolution: {integrity: sha512-RFnrW4lhXA3s3eqHDZvN654g8OTjzRfqpIRJYczCGB6HzphckVAi/Qh4tbPUbRuDi7s1Llv8g/NspLkttY3gTA==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -1582,8 +1587,8 @@ packages:
   stackback@0.0.2:
     resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
 
-  std-env@4.0.0:
-    resolution: {integrity: sha512-zUMPtQ/HBY3/50VbpkupYHbRroTRZJPRLvreamgErJVys0ceuzMkD44J/QjqhHjOzK42GQ3QZIeFG1OYfOtKqQ==}
+  std-env@4.1.0:
+    resolution: {integrity: sha512-Rq7ybcX2RuC55r9oaPVEW7/xu3tj8u4GeBYHBWCychFtzMIr86A7e3PPEBPT37sHStKX3+TiX/Fr/ACmJLVlLQ==}
 
   string_decoder@1.3.0:
     resolution: {integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==}
@@ -1594,12 +1599,12 @@ packages:
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
 
-  tinyexec@1.0.4:
-    resolution: {integrity: sha512-u9r3uZC0bdpGOXtlxUIdwf9pkmvhqJdrVCH9fapQtgy/OeTTMZ1nqH7agtvEfmGui6e1XxjcdrlxvxJvc3sMqw==}
+  tinyexec@1.2.4:
+    resolution: {integrity: sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg==}
     engines: {node: '>=18'}
 
-  tinyglobby@0.2.15:
-    resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
+  tinyglobby@0.2.17:
+    resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
   tinypool@2.1.0:
@@ -1634,8 +1639,8 @@ packages:
     peerDependencies:
       react: '*'
 
-  vite@7.2.7:
-    resolution: {integrity: sha512-ITcnkFeR3+fI8P1wMgItjGrR10170d8auB4EpMLPqmx6uxElH3a/hHGQabSHKdqd4FXWO1nFIp9rRn7JQ34ACQ==}
+  vite@7.3.5:
+    resolution: {integrity: sha512-KuOaNhcnGFN2zIPGA7wRmzF+lJA1sea7rHq17aiJ++9lzY1WWG6Jpwqwe1KNbRVPIqHmr8GLYx7jbrQcN/7/ww==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1688,7 +1693,7 @@ packages:
       '@vitest/ui': 4.1.2
       happy-dom: '*'
       jsdom: '*'
-      vite: '>=7.3.2'
+      vite: 7.3.5
     peerDependenciesMeta:
       '@edge-runtime/vm':
         optional: true
@@ -2019,19 +2024,19 @@ snapshots:
       '@allurereport/core-api': 3.11.0
       '@allurereport/web-commons': 3.11.0(preact@10.28.2)
       '@floating-ui/dom': 1.7.4
-      '@nivo/bar': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/funnel': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/heatmap': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/line': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/pie': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/text': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/treemap': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/bar': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/funnel': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/heatmap': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/line': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/pie': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/text': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/treemap': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@preact/compat': 18.3.1(preact@10.28.2)
       '@preact/signals': 2.8.1(preact@10.28.2)
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       clsx: 2.1.1
       d3-array: 3.2.4
       d3-axis: 3.0.0
@@ -2048,10 +2053,10 @@ snapshots:
       markdown-it: 14.2.0
       preact: 10.28.2
       prismjs: 1.30.0
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
-      react-dom: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
+      react-dom: '@preact/compat@18.3.2(preact@10.28.2)'
       sortablejs: 1.15.6
-      use-debounce: 10.0.6(@preact/compat@18.3.1(preact@10.28.2))
+      use-debounce: 10.0.6(@preact/compat@18.3.2(preact@10.28.2))
 
   '@allurereport/web-dashboard@3.11.0':
     dependencies:
@@ -2080,82 +2085,82 @@ snapshots:
 
   '@babel/runtime@7.28.4': {}
 
-  '@esbuild/aix-ppc64@0.25.12':
+  '@esbuild/aix-ppc64@0.28.1':
     optional: true
 
-  '@esbuild/android-arm64@0.25.12':
+  '@esbuild/android-arm64@0.28.1':
     optional: true
 
-  '@esbuild/android-arm@0.25.12':
+  '@esbuild/android-arm@0.28.1':
     optional: true
 
-  '@esbuild/android-x64@0.25.12':
+  '@esbuild/android-x64@0.28.1':
     optional: true
 
-  '@esbuild/darwin-arm64@0.25.12':
+  '@esbuild/darwin-arm64@0.28.1':
     optional: true
 
-  '@esbuild/darwin-x64@0.25.12':
+  '@esbuild/darwin-x64@0.28.1':
     optional: true
 
-  '@esbuild/freebsd-arm64@0.25.12':
+  '@esbuild/freebsd-arm64@0.28.1':
     optional: true
 
-  '@esbuild/freebsd-x64@0.25.12':
+  '@esbuild/freebsd-x64@0.28.1':
     optional: true
 
-  '@esbuild/linux-arm64@0.25.12':
+  '@esbuild/linux-arm64@0.28.1':
     optional: true
 
-  '@esbuild/linux-arm@0.25.12':
+  '@esbuild/linux-arm@0.28.1':
     optional: true
 
-  '@esbuild/linux-ia32@0.25.12':
+  '@esbuild/linux-ia32@0.28.1':
     optional: true
 
-  '@esbuild/linux-loong64@0.25.12':
+  '@esbuild/linux-loong64@0.28.1':
     optional: true
 
-  '@esbuild/linux-mips64el@0.25.12':
+  '@esbuild/linux-mips64el@0.28.1':
     optional: true
 
-  '@esbuild/linux-ppc64@0.25.12':
+  '@esbuild/linux-ppc64@0.28.1':
     optional: true
 
-  '@esbuild/linux-riscv64@0.25.12':
+  '@esbuild/linux-riscv64@0.28.1':
     optional: true
 
-  '@esbuild/linux-s390x@0.25.12':
+  '@esbuild/linux-s390x@0.28.1':
     optional: true
 
-  '@esbuild/linux-x64@0.25.12':
+  '@esbuild/linux-x64@0.28.1':
     optional: true
 
-  '@esbuild/netbsd-arm64@0.25.12':
+  '@esbuild/netbsd-arm64@0.28.1':
     optional: true
 
-  '@esbuild/netbsd-x64@0.25.12':
+  '@esbuild/netbsd-x64@0.28.1':
     optional: true
 
-  '@esbuild/openbsd-arm64@0.25.12':
+  '@esbuild/openbsd-arm64@0.28.1':
     optional: true
 
-  '@esbuild/openbsd-x64@0.25.12':
+  '@esbuild/openbsd-x64@0.28.1':
     optional: true
 
-  '@esbuild/openharmony-arm64@0.25.12':
+  '@esbuild/openharmony-arm64@0.28.1':
     optional: true
 
-  '@esbuild/sunos-x64@0.25.12':
+  '@esbuild/sunos-x64@0.28.1':
     optional: true
 
-  '@esbuild/win32-arm64@0.25.12':
+  '@esbuild/win32-arm64@0.28.1':
     optional: true
 
-  '@esbuild/win32-ia32@0.25.12':
+  '@esbuild/win32-ia32@0.28.1':
     optional: true
 
-  '@esbuild/win32-x64@0.25.12':
+  '@esbuild/win32-x64@0.28.1':
     optional: true
 
   '@floating-ui/core@1.7.3':
@@ -2171,74 +2176,74 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
-  '@nivo/annotations@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/annotations@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       lodash: 4.18.1
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/arcs@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/arcs@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/text': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/core': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/text': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/core': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-shape': 3.1.7
       d3-shape: 3.2.0
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/axes@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/axes@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@nivo/scales': 0.99.0
-      '@nivo/text': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/text': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-format': 1.4.5
       '@types/d3-time-format': 2.3.4
       d3-format: 1.4.5
       d3-time-format: 3.0.0
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/bar@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/bar@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/annotations': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/axes': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/annotations': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/axes': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@nivo/canvas': 0.99.0
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/legends': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/legends': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@nivo/scales': 0.99.0
-      '@nivo/text': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/text': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-scale': 4.0.9
       '@types/d3-shape': 3.1.7
       d3-scale: 4.0.2
       d3-shape: 3.2.0
       lodash: 4.18.1
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
   '@nivo/canvas@0.99.0': {}
 
-  '@nivo/colors@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/colors@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-color': 3.1.3
       '@types/d3-scale': 4.0.9
       '@types/d3-scale-chromatic': 3.1.0
@@ -2246,15 +2251,15 @@ snapshots:
       d3-scale: 4.0.2
       d3-scale-chromatic: 3.1.0
       lodash: 4.18.1
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/core@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/core@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-shape': 3.1.7
       d3-color: 3.1.0
       d3-format: 1.4.5
@@ -2264,89 +2269,89 @@ snapshots:
       d3-shape: 3.2.0
       d3-time-format: 3.0.0
       lodash: 4.18.1
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
-      react-virtualized-auto-sizer: 1.0.26(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      use-debounce: 10.0.6(@preact/compat@18.3.1(preact@10.28.2))
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
+      react-virtualized-auto-sizer: 1.0.26(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      use-debounce: 10.0.6(@preact/compat@18.3.2(preact@10.28.2))
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/funnel@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/funnel@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/annotations': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/text': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/annotations': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/text': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-scale': 4.0.9
       '@types/d3-shape': 3.1.7
       d3-scale: 4.0.2
       d3-shape: 3.2.0
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/heatmap@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/heatmap@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/annotations': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/axes': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/legends': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/annotations': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/axes': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/legends': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@nivo/scales': 0.99.0
-      '@nivo/text': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/core': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/text': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/core': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-scale': 4.0.9
       d3-scale: 4.0.2
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/legends@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/legends@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/text': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/text': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-scale': 4.0.9
       d3-scale: 4.0.2
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/line@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/line@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/annotations': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/axes': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/legends': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/annotations': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/axes': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/legends': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@nivo/scales': 0.99.0
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/voronoi': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/voronoi': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-shape': 3.1.7
       d3-shape: 3.2.0
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/pie@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/pie@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/arcs': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/legends': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/arcs': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/legends': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-shape': 3.1.7
       d3-shape: 3.2.0
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
@@ -2362,55 +2367,55 @@ snapshots:
       d3-time-format: 3.0.0
       lodash: 4.18.1
 
-  '@nivo/text@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/text@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/theming@0.99.0(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/theming@0.99.0(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
       lodash: 4.18.1
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
 
-  '@nivo/tooltip@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/tooltip@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/treemap@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/treemap@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/colors': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/text': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/core': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/web': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/colors': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/text': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/core': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/web': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-hierarchy': 3.1.7
       d3-hierarchy: 3.1.2
       lodash: 4.18.1
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
-  '@nivo/voronoi@0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@nivo/voronoi@0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@nivo/core': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/theming': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))
-      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))
+      '@nivo/core': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/theming': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))
+      '@nivo/tooltip': 0.99.0(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))
       '@types/d3-delaunay': 6.0.4
       '@types/d3-scale': 4.0.9
       d3-delaunay: 6.0.4
       d3-scale: 4.0.2
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
     transitivePeerDependencies:
       - react-dom
 
@@ -2481,6 +2486,10 @@ snapshots:
     dependencies:
       preact: 10.28.2
 
+  '@preact/compat@18.3.2(preact@10.28.2)':
+    dependencies:
+      preact: 10.28.2
+
   '@preact/signals-core@1.13.0': {}
 
   '@preact/signals@2.8.1(preact@10.28.2)':
@@ -2488,111 +2497,111 @@ snapshots:
       '@preact/signals-core': 1.13.0
       preact: 10.28.2
 
-  '@react-spring/animated@10.0.3(@preact/compat@18.3.1(preact@10.28.2))':
+  '@react-spring/animated@10.0.3(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@react-spring/shared': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
+      '@react-spring/shared': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
       '@react-spring/types': 10.0.3
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
 
-  '@react-spring/core@10.0.3(@preact/compat@18.3.1(preact@10.28.2))':
+  '@react-spring/core@10.0.3(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@react-spring/animated': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/shared': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
+      '@react-spring/animated': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/shared': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
       '@react-spring/types': 10.0.3
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
 
   '@react-spring/rafz@10.0.3': {}
 
-  '@react-spring/shared@10.0.3(@preact/compat@18.3.1(preact@10.28.2))':
+  '@react-spring/shared@10.0.3(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
       '@react-spring/rafz': 10.0.3
       '@react-spring/types': 10.0.3
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
 
   '@react-spring/types@10.0.3': {}
 
-  '@react-spring/web@10.0.3(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2))':
+  '@react-spring/web@10.0.3(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2))':
     dependencies:
-      '@react-spring/animated': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/core': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
-      '@react-spring/shared': 10.0.3(@preact/compat@18.3.1(preact@10.28.2))
+      '@react-spring/animated': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/core': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
+      '@react-spring/shared': 10.0.3(@preact/compat@18.3.2(preact@10.28.2))
       '@react-spring/types': 10.0.3
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
-      react-dom: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
+      react-dom: '@preact/compat@18.3.2(preact@10.28.2)'
 
-  '@rollup/rollup-android-arm-eabi@4.59.0':
+  '@rollup/rollup-android-arm-eabi@4.62.2':
     optional: true
 
-  '@rollup/rollup-android-arm64@4.59.0':
+  '@rollup/rollup-android-arm64@4.62.2':
     optional: true
 
-  '@rollup/rollup-darwin-arm64@4.59.0':
+  '@rollup/rollup-darwin-arm64@4.62.2':
     optional: true
 
-  '@rollup/rollup-darwin-x64@4.59.0':
+  '@rollup/rollup-darwin-x64@4.62.2':
     optional: true
 
-  '@rollup/rollup-freebsd-arm64@4.59.0':
+  '@rollup/rollup-freebsd-arm64@4.62.2':
     optional: true
 
-  '@rollup/rollup-freebsd-x64@4.59.0':
+  '@rollup/rollup-freebsd-x64@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.59.0':
+  '@rollup/rollup-linux-arm-gnueabihf@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-arm-musleabihf@4.59.0':
+  '@rollup/rollup-linux-arm-musleabihf@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-arm64-gnu@4.59.0':
+  '@rollup/rollup-linux-arm64-gnu@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-arm64-musl@4.59.0':
+  '@rollup/rollup-linux-arm64-musl@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-loong64-gnu@4.59.0':
+  '@rollup/rollup-linux-loong64-gnu@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-loong64-musl@4.59.0':
+  '@rollup/rollup-linux-loong64-musl@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-ppc64-gnu@4.59.0':
+  '@rollup/rollup-linux-ppc64-gnu@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-ppc64-musl@4.59.0':
+  '@rollup/rollup-linux-ppc64-musl@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-riscv64-gnu@4.59.0':
+  '@rollup/rollup-linux-riscv64-gnu@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-riscv64-musl@4.59.0':
+  '@rollup/rollup-linux-riscv64-musl@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-s390x-gnu@4.59.0':
+  '@rollup/rollup-linux-s390x-gnu@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-x64-gnu@4.59.0':
+  '@rollup/rollup-linux-x64-gnu@4.62.2':
     optional: true
 
-  '@rollup/rollup-linux-x64-musl@4.59.0':
+  '@rollup/rollup-linux-x64-musl@4.62.2':
     optional: true
 
-  '@rollup/rollup-openbsd-x64@4.59.0':
+  '@rollup/rollup-openbsd-x64@4.62.2':
     optional: true
 
-  '@rollup/rollup-openharmony-arm64@4.59.0':
+  '@rollup/rollup-openharmony-arm64@4.62.2':
     optional: true
 
-  '@rollup/rollup-win32-arm64-msvc@4.59.0':
+  '@rollup/rollup-win32-arm64-msvc@4.62.2':
     optional: true
 
-  '@rollup/rollup-win32-ia32-msvc@4.59.0':
+  '@rollup/rollup-win32-ia32-msvc@4.62.2':
     optional: true
 
-  '@rollup/rollup-win32-x64-gnu@4.59.0':
+  '@rollup/rollup-win32-x64-gnu@4.62.2':
     optional: true
 
-  '@rollup/rollup-win32-x64-msvc@4.59.0':
+  '@rollup/rollup-win32-x64-msvc@4.62.2':
     optional: true
 
   '@standard-schema/spec@1.1.0': {}
@@ -2636,7 +2645,7 @@ snapshots:
 
   '@types/deep-eql@4.0.2': {}
 
-  '@types/estree@1.0.8': {}
+  '@types/estree@1.0.9': {}
 
   '@types/node@24.12.0':
     dependencies:
@@ -2654,13 +2663,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.2(vite@7.2.7(@types/node@24.12.0)(yaml@2.8.3))':
+  '@vitest/mocker@4.1.2(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3))':
     dependencies:
       '@vitest/spy': 4.1.2
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.2.7(@types/node@24.12.0)(yaml@2.8.3)
+      vite: 7.3.5(@types/node@24.12.0)(yaml@2.8.3)
 
   '@vitest/pretty-format@4.1.2':
     dependencies:
@@ -2709,11 +2718,11 @@ snapshots:
       '@playwright/test': 1.60.0
       allure-js-commons: 3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0))
 
-  allure-vitest@3.10.0(@vitest/runner@4.1.2)(allure-playwright@3.10.0(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@24.12.0)(vite@7.2.7(@types/node@24.12.0)(yaml@2.8.3))):
+  allure-vitest@3.10.0(@vitest/runner@4.1.2)(allure-playwright@3.10.0(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3))):
     dependencies:
       '@vitest/runner': 4.1.2
       allure-js-commons: 3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0))
-      vitest: 4.1.2(@types/node@24.12.0)(vite@7.2.7(@types/node@24.12.0)(yaml@2.8.3))
+      vitest: 4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3))
     transitivePeerDependencies:
       - allure-playwright
 
@@ -2982,7 +2991,7 @@ snapshots:
 
   es-errors@1.3.0: {}
 
-  es-module-lexer@2.0.0: {}
+  es-module-lexer@2.1.0: {}
 
   es-object-atoms@1.1.1:
     dependencies:
@@ -2995,38 +3004,38 @@ snapshots:
       has-tostringtag: 1.0.2
       hasown: 2.0.4
 
-  esbuild@0.25.12:
+  esbuild@0.28.1:
     optionalDependencies:
-      '@esbuild/aix-ppc64': 0.25.12
-      '@esbuild/android-arm': 0.25.12
-      '@esbuild/android-arm64': 0.25.12
-      '@esbuild/android-x64': 0.25.12
-      '@esbuild/darwin-arm64': 0.25.12
-      '@esbuild/darwin-x64': 0.25.12
-      '@esbuild/freebsd-arm64': 0.25.12
-      '@esbuild/freebsd-x64': 0.25.12
-      '@esbuild/linux-arm': 0.25.12
-      '@esbuild/linux-arm64': 0.25.12
-      '@esbuild/linux-ia32': 0.25.12
-      '@esbuild/linux-loong64': 0.25.12
-      '@esbuild/linux-mips64el': 0.25.12
-      '@esbuild/linux-ppc64': 0.25.12
-      '@esbuild/linux-riscv64': 0.25.12
-      '@esbuild/linux-s390x': 0.25.12
-      '@esbuild/linux-x64': 0.25.12
-      '@esbuild/netbsd-arm64': 0.25.12
-      '@esbuild/netbsd-x64': 0.25.12
-      '@esbuild/openbsd-arm64': 0.25.12
-      '@esbuild/openbsd-x64': 0.25.12
-      '@esbuild/openharmony-arm64': 0.25.12
-      '@esbuild/sunos-x64': 0.25.12
-      '@esbuild/win32-arm64': 0.25.12
-      '@esbuild/win32-ia32': 0.25.12
-      '@esbuild/win32-x64': 0.25.12
+      '@esbuild/aix-ppc64': 0.28.1
+      '@esbuild/android-arm': 0.28.1
+      '@esbuild/android-arm64': 0.28.1
+      '@esbuild/android-x64': 0.28.1
+      '@esbuild/darwin-arm64': 0.28.1
+      '@esbuild/darwin-x64': 0.28.1
+      '@esbuild/freebsd-arm64': 0.28.1
+      '@esbuild/freebsd-x64': 0.28.1
+      '@esbuild/linux-arm': 0.28.1
+      '@esbuild/linux-arm64': 0.28.1
+      '@esbuild/linux-ia32': 0.28.1
+      '@esbuild/linux-loong64': 0.28.1
+      '@esbuild/linux-mips64el': 0.28.1
+      '@esbuild/linux-ppc64': 0.28.1
+      '@esbuild/linux-riscv64': 0.28.1
+      '@esbuild/linux-s390x': 0.28.1
+      '@esbuild/linux-x64': 0.28.1
+      '@esbuild/netbsd-arm64': 0.28.1
+      '@esbuild/netbsd-x64': 0.28.1
+      '@esbuild/openbsd-arm64': 0.28.1
+      '@esbuild/openbsd-x64': 0.28.1
+      '@esbuild/openharmony-arm64': 0.28.1
+      '@esbuild/sunos-x64': 0.28.1
+      '@esbuild/win32-arm64': 0.28.1
+      '@esbuild/win32-ia32': 0.28.1
+      '@esbuild/win32-x64': 0.28.1
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
 
   event-target-shim@5.0.1: {}
 
@@ -3283,7 +3292,7 @@ snapshots:
       shell-quote: 1.8.4
       which: 5.0.0
 
-  obug@2.1.1: {}
+  obug@2.1.3: {}
 
   open@10.2.0:
     dependencies:
@@ -3376,10 +3385,10 @@ snapshots:
 
   punycode.js@2.3.1: {}
 
-  react-virtualized-auto-sizer@1.0.26(@preact/compat@18.3.1(preact@10.28.2))(@preact/compat@18.3.1(preact@10.28.2)):
+  react-virtualized-auto-sizer@1.0.26(@preact/compat@18.3.2(preact@10.28.2))(@preact/compat@18.3.2(preact@10.28.2)):
     dependencies:
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
-      react-dom: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
+      react-dom: '@preact/compat@18.3.2(preact@10.28.2)'
 
   read-package-json-fast@4.0.0:
     dependencies:
@@ -3398,35 +3407,35 @@ snapshots:
 
   robust-predicates@3.0.2: {}
 
-  rollup@4.59.0:
+  rollup@4.62.2:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
     optionalDependencies:
-      '@rollup/rollup-android-arm-eabi': 4.59.0
-      '@rollup/rollup-android-arm64': 4.59.0
-      '@rollup/rollup-darwin-arm64': 4.59.0
-      '@rollup/rollup-darwin-x64': 4.59.0
-      '@rollup/rollup-freebsd-arm64': 4.59.0
-      '@rollup/rollup-freebsd-x64': 4.59.0
-      '@rollup/rollup-linux-arm-gnueabihf': 4.59.0
-      '@rollup/rollup-linux-arm-musleabihf': 4.59.0
-      '@rollup/rollup-linux-arm64-gnu': 4.59.0
-      '@rollup/rollup-linux-arm64-musl': 4.59.0
-      '@rollup/rollup-linux-loong64-gnu': 4.59.0
-      '@rollup/rollup-linux-loong64-musl': 4.59.0
-      '@rollup/rollup-linux-ppc64-gnu': 4.59.0
-      '@rollup/rollup-linux-ppc64-musl': 4.59.0
-      '@rollup/rollup-linux-riscv64-gnu': 4.59.0
-      '@rollup/rollup-linux-riscv64-musl': 4.59.0
-      '@rollup/rollup-linux-s390x-gnu': 4.59.0
-      '@rollup/rollup-linux-x64-gnu': 4.59.0
-      '@rollup/rollup-linux-x64-musl': 4.59.0
-      '@rollup/rollup-openbsd-x64': 4.59.0
-      '@rollup/rollup-openharmony-arm64': 4.59.0
-      '@rollup/rollup-win32-arm64-msvc': 4.59.0
-      '@rollup/rollup-win32-ia32-msvc': 4.59.0
-      '@rollup/rollup-win32-x64-gnu': 4.59.0
-      '@rollup/rollup-win32-x64-msvc': 4.59.0
+      '@rollup/rollup-android-arm-eabi': 4.62.2
+      '@rollup/rollup-android-arm64': 4.62.2
+      '@rollup/rollup-darwin-arm64': 4.62.2
+      '@rollup/rollup-darwin-x64': 4.62.2
+      '@rollup/rollup-freebsd-arm64': 4.62.2
+      '@rollup/rollup-freebsd-x64': 4.62.2
+      '@rollup/rollup-linux-arm-gnueabihf': 4.62.2
+      '@rollup/rollup-linux-arm-musleabihf': 4.62.2
+      '@rollup/rollup-linux-arm64-gnu': 4.62.2
+      '@rollup/rollup-linux-arm64-musl': 4.62.2
+      '@rollup/rollup-linux-loong64-gnu': 4.62.2
+      '@rollup/rollup-linux-loong64-musl': 4.62.2
+      '@rollup/rollup-linux-ppc64-gnu': 4.62.2
+      '@rollup/rollup-linux-ppc64-musl': 4.62.2
+      '@rollup/rollup-linux-riscv64-gnu': 4.62.2
+      '@rollup/rollup-linux-riscv64-musl': 4.62.2
+      '@rollup/rollup-linux-s390x-gnu': 4.62.2
+      '@rollup/rollup-linux-x64-gnu': 4.62.2
+      '@rollup/rollup-linux-x64-musl': 4.62.2
+      '@rollup/rollup-openbsd-x64': 4.62.2
+      '@rollup/rollup-openharmony-arm64': 4.62.2
+      '@rollup/rollup-win32-arm64-msvc': 4.62.2
+      '@rollup/rollup-win32-ia32-msvc': 4.62.2
+      '@rollup/rollup-win32-x64-gnu': 4.62.2
+      '@rollup/rollup-win32-x64-msvc': 4.62.2
       fsevents: 2.3.3
 
   run-applescript@7.1.0: {}
@@ -3455,7 +3464,7 @@ snapshots:
 
   stackback@0.0.2: {}
 
-  std-env@4.0.0: {}
+  std-env@4.1.0: {}
 
   string_decoder@1.3.0:
     dependencies:
@@ -3467,9 +3476,9 @@ snapshots:
 
   tinybench@2.9.0: {}
 
-  tinyexec@1.0.4: {}
+  tinyexec@1.2.4: {}
 
-  tinyglobby@0.2.15:
+  tinyglobby@0.2.17:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
@@ -3489,44 +3498,44 @@ snapshots:
 
   unicorn-magic@0.3.0: {}
 
-  use-debounce@10.0.6(@preact/compat@18.3.1(preact@10.28.2)):
+  use-debounce@10.0.6(@preact/compat@18.3.2(preact@10.28.2)):
     dependencies:
-      react: '@preact/compat@18.3.1(preact@10.28.2)'
+      react: '@preact/compat@18.3.2(preact@10.28.2)'
 
-  vite@7.2.7(@types/node@24.12.0)(yaml@2.8.3):
+  vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3):
     dependencies:
-      esbuild: 0.25.12
+      esbuild: 0.28.1
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
       postcss: 8.5.15
-      rollup: 4.59.0
-      tinyglobby: 0.2.15
+      rollup: 4.62.2
+      tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 24.12.0
       fsevents: 2.3.3
       yaml: 2.8.3
 
-  vitest@4.1.2(@types/node@24.12.0)(vite@7.2.7(@types/node@24.12.0)(yaml@2.8.3)):
+  vitest@4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3)):
     dependencies:
       '@vitest/expect': 4.1.2
-      '@vitest/mocker': 4.1.2(vite@7.2.7(@types/node@24.12.0)(yaml@2.8.3))
+      '@vitest/mocker': 4.1.2(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3))
       '@vitest/pretty-format': 4.1.2
       '@vitest/runner': 4.1.2
       '@vitest/snapshot': 4.1.2
       '@vitest/spy': 4.1.2
       '@vitest/utils': 4.1.2
-      es-module-lexer: 2.0.0
+      es-module-lexer: 2.1.0
       expect-type: 1.3.0
       magic-string: 0.30.21
-      obug: 2.1.1
+      obug: 2.1.3
       pathe: 2.0.3
       picomatch: 4.0.4
-      std-env: 4.0.0
+      std-env: 4.1.0
       tinybench: 2.9.0
-      tinyexec: 1.0.4
-      tinyglobby: 0.2.15
+      tinyexec: 1.2.4
+      tinyglobby: 0.2.17
       tinyrainbow: 3.1.0
-      vite: 7.2.7(@types/node@24.12.0)(yaml@2.8.3)
+      vite: 7.3.5(@types/node@24.12.0)(yaml@2.8.3)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.12.0
