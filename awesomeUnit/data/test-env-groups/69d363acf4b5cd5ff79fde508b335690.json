@@ -1,1 +1,1 @@
-{"id":"69d363acf4b5cd5ff79fde508b335690","fullName":"allure3-demo:test/unit/index.test.ts#unit tests should fail","name":"should fail","status":"failed","testResultsByEnv":{"ubuntu-latest":"5d4d5561de58ca4e2908637a6b50e1c4","macos-latest":"225051d1fb59c7f8c61ac789ef775c42"}}
+{"id":"69d363acf4b5cd5ff79fde508b335690","fullName":"allure3-demo:test/unit/index.test.ts#unit tests should fail","name":"should fail","status":"failed","testResultsByEnv":{"ubuntu-latest":"a76ba9558860ab3a9b8038ea589f754a","macos-latest":"9708135bec4ad5028122ada7ebfa2fc5"}}
