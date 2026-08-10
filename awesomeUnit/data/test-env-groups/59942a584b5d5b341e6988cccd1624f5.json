@@ -1,1 +1,1 @@
-{"id":"59942a584b5d5b341e6988cccd1624f5","fullName":"allure3-demo:test/unit/index.test.ts#unit tests should be broken","name":"should be broken","status":"broken","testResultsByEnv":{"ubuntu-latest":"c763d63a845317a3a35dbf0f7dab1dcc","macos-latest":"fb00c4403caa70e148e80ea8069a6e96"}}
+{"id":"59942a584b5d5b341e6988cccd1624f5","fullName":"allure3-demo:test/unit/index.test.ts#unit tests should be broken","name":"should be broken","status":"broken","testResultsByEnv":{"ubuntu-latest":"3d6a11a25d239ed1d2daf1db99d50896","macos-latest":"4b8536cf9f976bb5c7061e1f5b8000d3"}}
