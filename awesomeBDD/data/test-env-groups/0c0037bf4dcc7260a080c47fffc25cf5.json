@@ -1,1 +1,1 @@
-{"id":"0c0037bf4dcc7260a080c47fffc25cf5","fullName":"start.test.ts:104:5","name":"\"PHPUnit\"","status":"broken","testResultsByEnv":{"ubuntu-latest":"315aa3476918246884ac78adaa6bb071","macos-latest":"66b15cb5fb45d2a4361ad9ee4a5d56b7"}}
+{"id":"0c0037bf4dcc7260a080c47fffc25cf5","fullName":"start.test.ts:104:5","name":"\"PHPUnit\"","status":"passed","testResultsByEnv":{"ubuntu-latest":"672e19c33d2cc5f5c262a790d6fc7b55","macos-latest":"7d1c2c76523e7559af0370bc2e393083"}}
