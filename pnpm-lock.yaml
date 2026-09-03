@@ -43,16 +43,16 @@ importers:
         version: 4.1.2
       allure:
         specifier: 3.11.0
-        version: 3.11.0(preact@10.28.2)
+        version: 3.11.0(debug@4.4.3)(preact@10.28.2)
       allure-js-commons:
-        specifier: ^3.10.0
-        version: 3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0))
+        specifier: ^3.11.0
+        version: 3.11.0(allure-playwright@3.11.0(@playwright/test@1.60.0))
       allure-playwright:
-        specifier: ^3.10.0
-        version: 3.10.0(@playwright/test@1.60.0)
+        specifier: ^3.11.0
+        version: 3.11.0(@playwright/test@1.60.0)
       allure-vitest:
         specifier: ^3.10.0
-        version: 3.10.0(@vitest/runner@4.1.2)(allure-playwright@3.10.0(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3)))
+        version: 3.10.0(@vitest/runner@4.1.2)(allure-playwright@3.11.0(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3)))
       d3-shape:
         specifier: ^3.2.0
         version: 3.2.0
@@ -841,8 +841,16 @@ packages:
       allure-playwright:
         optional: true
 
-  allure-playwright@3.10.0:
-    resolution: {integrity: sha512-MFejAaHVuToRB/LGWlVC6Ai2y2vWZ+VqB786IINJY2c74wAwz18oaih/NVXQaDk+sDHkjKzcSuVM9cmaA/OBaw==}
+  allure-js-commons@3.11.0:
+    resolution: {integrity: sha512-dYThkDhru7u7sgwhxRoE9uaxffFXcwnL2+zE0CnmgGebvFmCP8yAZieCHc44MRathtXt44xym9UuVaKSaaJfzw==}
+    peerDependencies:
+      allure-playwright: 3.11.0
+    peerDependenciesMeta:
+      allure-playwright:
+        optional: true
+
+  allure-playwright@3.11.0:
+    resolution: {integrity: sha512-o+yWq1gJo7TNuMV6eun7SOuJh6nHG3YXmu+ZVhKf6vJQCbczf3jAik0ob8rBO8JOqU+C/oJZfIiQVdp5j/Dosg==}
     peerDependencies:
       '@playwright/test': '>=1.53.0'
 
@@ -1777,7 +1785,7 @@ snapshots:
     dependencies:
       d3-shape: 3.2.0
 
-  '@allurereport/core@3.11.0(preact@10.28.2)':
+  '@allurereport/core@3.11.0(debug@4.4.3)(preact@10.28.2)':
     dependencies:
       '@allurereport/ci': 3.11.0
       '@allurereport/core-api': 3.11.0
@@ -1788,15 +1796,15 @@ snapshots:
       '@allurereport/plugin-classic': 3.11.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.11.0
       '@allurereport/plugin-dashboard': 3.11.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.11.0
+      '@allurereport/plugin-jira': 3.11.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.11.0
       '@allurereport/plugin-progress': 3.11.0
       '@allurereport/plugin-slack': 3.11.0
-      '@allurereport/plugin-testops': 3.11.0
+      '@allurereport/plugin-testops': 3.11.0(debug@4.4.3)
       '@allurereport/plugin-testplan': 3.11.0
       '@allurereport/reader': 3.11.0
       '@allurereport/reader-api': 3.11.0
-      '@allurereport/service': 3.11.0
+      '@allurereport/service': 3.11.0(debug@4.4.3)
       '@allurereport/summary': 3.11.0
       glob: 13.0.6
       handlebars: 4.7.9
@@ -1878,11 +1886,11 @@ snapshots:
       - preact
       - typescript
 
-  '@allurereport/plugin-jira@3.11.0':
+  '@allurereport/plugin-jira@3.11.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.11.0
       '@allurereport/plugin-api': 3.11.0
-      axios: 1.18.1
+      axios: 1.18.1(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -1909,14 +1917,14 @@ snapshots:
       '@allurereport/core-api': 3.11.0
       '@allurereport/plugin-api': 3.11.0
 
-  '@allurereport/plugin-testops@3.11.0':
+  '@allurereport/plugin-testops@3.11.0(debug@4.4.3)':
     dependencies:
       '@allurereport/ci': 3.11.0
       '@allurereport/core-api': 3.11.0
       '@allurereport/plugin-api': 3.11.0
       '@allurereport/reader-api': 3.11.0
-      '@allurereport/service': 3.11.0
-      axios: 1.18.1
+      '@allurereport/service': 3.11.0(debug@4.4.3)
+      axios: 1.18.1(debug@4.4.3)
       form-data: 4.0.6
       lodash-es: 4.18.1
       p-limit: 7.3.0
@@ -1944,11 +1952,11 @@ snapshots:
       '@allurereport/reader-api': 3.11.0
       fast-xml-parser: 5.8.0
 
-  '@allurereport/service@3.11.0':
+  '@allurereport/service@3.11.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.11.0
       '@allurereport/plugin-api': 3.11.0
-      axios: 1.18.1
+      axios: 1.18.1(debug@4.4.3)
       open: 10.2.0
     transitivePeerDependencies:
       - debug
@@ -2709,30 +2717,36 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  allure-js-commons@3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0)):
+  allure-js-commons@3.10.0(allure-playwright@3.11.0(@playwright/test@1.60.0)):
     dependencies:
       md5: 2.3.0
     optionalDependencies:
-      allure-playwright: 3.10.0(@playwright/test@1.60.0)
+      allure-playwright: 3.11.0(@playwright/test@1.60.0)
 
-  allure-playwright@3.10.0(@playwright/test@1.60.0):
+  allure-js-commons@3.11.0(allure-playwright@3.11.0(@playwright/test@1.60.0)):
+    dependencies:
+      md5: 2.3.0
+    optionalDependencies:
+      allure-playwright: 3.11.0(@playwright/test@1.60.0)
+
+  allure-playwright@3.11.0(@playwright/test@1.60.0):
     dependencies:
       '@playwright/test': 1.60.0
-      allure-js-commons: 3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0))
+      allure-js-commons: 3.11.0(allure-playwright@3.11.0(@playwright/test@1.60.0))
 
-  allure-vitest@3.10.0(@vitest/runner@4.1.2)(allure-playwright@3.10.0(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3))):
+  allure-vitest@3.10.0(@vitest/runner@4.1.2)(allure-playwright@3.11.0(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3))):
     dependencies:
       '@vitest/runner': 4.1.2
-      allure-js-commons: 3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0))
+      allure-js-commons: 3.10.0(allure-playwright@3.11.0(@playwright/test@1.60.0))
       vitest: 4.1.2(@types/node@24.12.0)(vite@7.3.5(@types/node@24.12.0)(yaml@2.8.3))
     transitivePeerDependencies:
       - allure-playwright
 
-  allure@3.11.0(preact@10.28.2):
+  allure@3.11.0(debug@4.4.3)(preact@10.28.2):
     dependencies:
       '@allurereport/charts-api': 3.11.0
       '@allurereport/ci': 3.11.0
-      '@allurereport/core': 3.11.0(preact@10.28.2)
+      '@allurereport/core': 3.11.0(debug@4.4.3)(preact@10.28.2)
       '@allurereport/core-api': 3.11.0
       '@allurereport/directory-watcher': 3.11.0
       '@allurereport/plugin-agent': 3.11.0
@@ -2742,13 +2756,13 @@ snapshots:
       '@allurereport/plugin-classic': 3.11.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.11.0
       '@allurereport/plugin-dashboard': 3.11.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.11.0
+      '@allurereport/plugin-jira': 3.11.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.11.0
       '@allurereport/plugin-progress': 3.11.0
       '@allurereport/plugin-server-reload': 3.11.0
       '@allurereport/plugin-slack': 3.11.0
       '@allurereport/reader-api': 3.11.0
-      '@allurereport/service': 3.11.0
+      '@allurereport/service': 3.11.0(debug@4.4.3)
       '@allurereport/static-server': 3.11.0
       adm-zip: 0.6.0
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
@@ -2777,9 +2791,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.18.1:
+  axios@1.18.1(debug@4.4.3):
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.0(debug@4.4.3)
       form-data: 4.0.6
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -3067,7 +3081,9 @@ snapshots:
       locate-path: 8.0.0
       unicorn-magic: 0.3.0
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.0(debug@4.4.3):
+    optionalDependencies:
+      debug: 4.4.3
 
   form-data@4.0.6:
     dependencies:
