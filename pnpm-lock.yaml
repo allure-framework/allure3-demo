@@ -43,7 +43,7 @@ importers:
         version: 4.1.2
       allure:
         specifier: 3.11.0
-        version: 3.11.0(preact@10.28.2)
+        version: 3.11.0(debug@4.4.3)(preact@10.28.2)
       allure-js-commons:
         specifier: ^3.10.0
         version: 3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0))
@@ -57,8 +57,8 @@ importers:
         specifier: ^3.2.0
         version: 3.2.0
       lefthook:
-        specifier: ^2.1.4
-        version: 2.1.4
+        specifier: ^2.1.12
+        version: 2.1.12
       npm-run-all2:
         specifier: ^8.0.4
         version: 8.0.4
@@ -1278,58 +1278,58 @@ packages:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
     engines: {node: '>=6'}
 
-  lefthook-darwin-arm64@2.1.4:
-    resolution: {integrity: sha512-BUAAE9+rUrjr39a+wH/1zHmGrDdwUQ2Yq/z6BQbM/yUb9qtXBRcQ5eOXxApqWW177VhGBpX31aqIlfAZ5Q7wzw==}
+  lefthook-darwin-arm64@2.1.12:
+    resolution: {integrity: sha512-GSUjqaCuxAYlPOovbjXEWE3HAIa/xOQkTTmZ937zieQldjPLTaC7+s5FHoxKywn+D9riBlofkDqG7Z4f5zzmPA==}
     cpu: [arm64]
     os: [darwin]
 
-  lefthook-darwin-x64@2.1.4:
-    resolution: {integrity: sha512-K1ncIMEe84fe+ss1hQNO7rIvqiKy2TJvTFpkypvqFodT7mJXZn7GLKYTIXdIuyPAYthRa9DwFnx5uMoHwD2F1Q==}
+  lefthook-darwin-x64@2.1.12:
+    resolution: {integrity: sha512-qAUHSSw/7Afi5wxkoLkxORxSicCeTBXyVLnRgD6YZra6udviozpK3Aok9Z6FIWeKc5FBijRMSNDxGPTREhsjcQ==}
     cpu: [x64]
     os: [darwin]
 
-  lefthook-freebsd-arm64@2.1.4:
-    resolution: {integrity: sha512-PVUhjOhVN71YaYsVdQyNbFZ4a2jFB2Tg5hKrrn9kaWpx64aLz/XivLjwr8sEuTaP1GRlEWBpW6Bhrcsyo39qFw==}
+  lefthook-freebsd-arm64@2.1.12:
+    resolution: {integrity: sha512-FHZRfKliFNbyz54zsoGdVe9muq67cNjBTZ6jrPPUjI7xUuyCwSpzA+1OpiwJT00L9pP5ZGONBqnGZKnrpC+7Uw==}
     cpu: [arm64]
     os: [freebsd]
 
-  lefthook-freebsd-x64@2.1.4:
-    resolution: {integrity: sha512-ZWV9o/LeyWNEBoVO+BhLqxH3rGTba05nkm5NvMjEFSj7LbUNUDbQmupZwtHl1OMGJO66eZP0CalzRfUH6GhBxQ==}
+  lefthook-freebsd-x64@2.1.12:
+    resolution: {integrity: sha512-HYQZPGy2DDEx7dbuotusJpujY5q9igOLgx36qeeQcNQuvvdGHPj2ZGSIsGKhoJ0dw5Qa4knKJoPAHEZQWdV/og==}
     cpu: [x64]
     os: [freebsd]
 
-  lefthook-linux-arm64@2.1.4:
-    resolution: {integrity: sha512-iWN0pGnTjrIvNIcSI1vQBJXUbybTqJ5CLMniPA0olabMXQfPDrdMKVQe+mgdwHK+E3/Y0H0ZNL3lnOj6Sk6szA==}
+  lefthook-linux-arm64@2.1.12:
+    resolution: {integrity: sha512-ipjOri2PB/sk4noPrHQuM5fcpNBjmlKo4qMtXyLnxeOxGYHWZzf0Xi0OtrXHQ//tOprcv40ADvhUuSdcGqigLw==}
     cpu: [arm64]
     os: [linux]
 
-  lefthook-linux-x64@2.1.4:
-    resolution: {integrity: sha512-96bTBE/JdYgqWYAJDh+/e/0MaxJ25XTOAk7iy/fKoZ1ugf6S0W9bEFbnCFNooXOcxNVTan5xWKfcjJmPIKtsJA==}
+  lefthook-linux-x64@2.1.12:
+    resolution: {integrity: sha512-DmU6xfvqVoFdW+STyc70YI4Ry8vkHGKHx+IJ1Js/Gacq5dv+fiwNzwle3bi28EkL6P8xY67B/CfQfRj4SRU4tg==}
     cpu: [x64]
     os: [linux]
 
-  lefthook-openbsd-arm64@2.1.4:
-    resolution: {integrity: sha512-oYUoK6AIJNEr9lUSpIMj6g7sWzotvtc3ryw7yoOyQM6uqmEduw73URV/qGoUcm4nqqmR93ZalZwR2r3Gd61zvw==}
+  lefthook-openbsd-arm64@2.1.12:
+    resolution: {integrity: sha512-vb0J7bElLvoaCWQmna3HntsvoNqMsGAhfjjC99ss1OdCteufZKM3RxCVoMBEbD50Itv2c1Ua2AFVToltVFTy1Q==}
     cpu: [arm64]
     os: [openbsd]
 
-  lefthook-openbsd-x64@2.1.4:
-    resolution: {integrity: sha512-i/Dv9Jcm68y9cggr1PhyUhOabBGP9+hzQPoiyOhKks7y9qrJl79A8XfG6LHekSuYc2VpiSu5wdnnrE1cj2nfTg==}
+  lefthook-openbsd-x64@2.1.12:
+    resolution: {integrity: sha512-QOmhDWqPPK4+99scanfEmbJjUR+JYC93qhr/0bp5Dj3LaR3kVFNWc6zOQUsOTPy/LC6PG759Lej/mr/BtjUL2Q==}
     cpu: [x64]
     os: [openbsd]
 
-  lefthook-windows-arm64@2.1.4:
-    resolution: {integrity: sha512-hSww7z+QX4YMnw2lK7DMrs3+w7NtxksuMKOkCKGyxUAC/0m1LAICo0ZbtdDtZ7agxRQQQ/SEbzFRhU5ysNcbjA==}
+  lefthook-windows-arm64@2.1.12:
+    resolution: {integrity: sha512-eErEyr9AHkRFj6TxpCQeKGd0s6IrtL/VEIZ/ssg8dNfG+ycR4jAW/IAlrJSw6/ZQXb3WtWLaQ6QA5c+TLh7vmg==}
     cpu: [arm64]
     os: [win32]
 
-  lefthook-windows-x64@2.1.4:
-    resolution: {integrity: sha512-eE68LwnogxwcPgGsbVGPGxmghyMGmU9SdGwcc+uhGnUxPz1jL89oECMWJNc36zjVK24umNeDAzB5KA3lw1MuWw==}
+  lefthook-windows-x64@2.1.12:
+    resolution: {integrity: sha512-0h+WmDVdDriTjloD/UbjPq/ZtqaaJlPAdGcVwMCEdAxfbF0FTgDbKX3igui9g2U/qG2y6QpVhtz1jeiRe7ctaw==}
     cpu: [x64]
     os: [win32]
 
-  lefthook@2.1.4:
-    resolution: {integrity: sha512-JNfJ5gAn0KADvJ1I6/xMcx70+/6TL6U9gqGkKvPw5RNMfatC7jIg0Evl97HN846xmfz959BV70l8r3QsBJk30w==}
+  lefthook@2.1.12:
+    resolution: {integrity: sha512-2uOexfsrrRhCiTUWdGyDySxVHHhOFJ8MQejs27dM3hugrQB48/z1ZVlaNoxpZ1SnzQ1GaDIbO5rAvicwyiknYQ==}
     hasBin: true
 
   linkify-it@5.0.2:
@@ -1777,7 +1777,7 @@ snapshots:
     dependencies:
       d3-shape: 3.2.0
 
-  '@allurereport/core@3.11.0(preact@10.28.2)':
+  '@allurereport/core@3.11.0(debug@4.4.3)(preact@10.28.2)':
     dependencies:
       '@allurereport/ci': 3.11.0
       '@allurereport/core-api': 3.11.0
@@ -1788,15 +1788,15 @@ snapshots:
       '@allurereport/plugin-classic': 3.11.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.11.0
       '@allurereport/plugin-dashboard': 3.11.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.11.0
+      '@allurereport/plugin-jira': 3.11.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.11.0
       '@allurereport/plugin-progress': 3.11.0
       '@allurereport/plugin-slack': 3.11.0
-      '@allurereport/plugin-testops': 3.11.0
+      '@allurereport/plugin-testops': 3.11.0(debug@4.4.3)
       '@allurereport/plugin-testplan': 3.11.0
       '@allurereport/reader': 3.11.0
       '@allurereport/reader-api': 3.11.0
-      '@allurereport/service': 3.11.0
+      '@allurereport/service': 3.11.0(debug@4.4.3)
       '@allurereport/summary': 3.11.0
       glob: 13.0.6
       handlebars: 4.7.9
@@ -1878,11 +1878,11 @@ snapshots:
       - preact
       - typescript
 
-  '@allurereport/plugin-jira@3.11.0':
+  '@allurereport/plugin-jira@3.11.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.11.0
       '@allurereport/plugin-api': 3.11.0
-      axios: 1.18.1
+      axios: 1.18.1(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -1909,14 +1909,14 @@ snapshots:
       '@allurereport/core-api': 3.11.0
       '@allurereport/plugin-api': 3.11.0
 
-  '@allurereport/plugin-testops@3.11.0':
+  '@allurereport/plugin-testops@3.11.0(debug@4.4.3)':
     dependencies:
       '@allurereport/ci': 3.11.0
       '@allurereport/core-api': 3.11.0
       '@allurereport/plugin-api': 3.11.0
       '@allurereport/reader-api': 3.11.0
-      '@allurereport/service': 3.11.0
-      axios: 1.18.1
+      '@allurereport/service': 3.11.0(debug@4.4.3)
+      axios: 1.18.1(debug@4.4.3)
       form-data: 4.0.6
       lodash-es: 4.18.1
       p-limit: 7.3.0
@@ -1944,11 +1944,11 @@ snapshots:
       '@allurereport/reader-api': 3.11.0
       fast-xml-parser: 5.8.0
 
-  '@allurereport/service@3.11.0':
+  '@allurereport/service@3.11.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.11.0
       '@allurereport/plugin-api': 3.11.0
-      axios: 1.18.1
+      axios: 1.18.1(debug@4.4.3)
       open: 10.2.0
     transitivePeerDependencies:
       - debug
@@ -2728,11 +2728,11 @@ snapshots:
     transitivePeerDependencies:
       - allure-playwright
 
-  allure@3.11.0(preact@10.28.2):
+  allure@3.11.0(debug@4.4.3)(preact@10.28.2):
     dependencies:
       '@allurereport/charts-api': 3.11.0
       '@allurereport/ci': 3.11.0
-      '@allurereport/core': 3.11.0(preact@10.28.2)
+      '@allurereport/core': 3.11.0(debug@4.4.3)(preact@10.28.2)
       '@allurereport/core-api': 3.11.0
       '@allurereport/directory-watcher': 3.11.0
       '@allurereport/plugin-agent': 3.11.0
@@ -2742,13 +2742,13 @@ snapshots:
       '@allurereport/plugin-classic': 3.11.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.11.0
       '@allurereport/plugin-dashboard': 3.11.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.11.0
+      '@allurereport/plugin-jira': 3.11.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.11.0
       '@allurereport/plugin-progress': 3.11.0
       '@allurereport/plugin-server-reload': 3.11.0
       '@allurereport/plugin-slack': 3.11.0
       '@allurereport/reader-api': 3.11.0
-      '@allurereport/service': 3.11.0
+      '@allurereport/service': 3.11.0(debug@4.4.3)
       '@allurereport/static-server': 3.11.0
       adm-zip: 0.6.0
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
@@ -2777,9 +2777,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.18.1:
+  axios@1.18.1(debug@4.4.3):
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.0(debug@4.4.3)
       form-data: 4.0.6
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -3067,7 +3067,9 @@ snapshots:
       locate-path: 8.0.0
       unicorn-magic: 0.3.0
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.0(debug@4.4.3):
+    optionalDependencies:
+      debug: 4.4.3
 
   form-data@4.0.6:
     dependencies:
@@ -3169,48 +3171,48 @@ snapshots:
 
   kleur@3.0.3: {}
 
-  lefthook-darwin-arm64@2.1.4:
+  lefthook-darwin-arm64@2.1.12:
     optional: true
 
-  lefthook-darwin-x64@2.1.4:
+  lefthook-darwin-x64@2.1.12:
     optional: true
 
-  lefthook-freebsd-arm64@2.1.4:
+  lefthook-freebsd-arm64@2.1.12:
     optional: true
 
-  lefthook-freebsd-x64@2.1.4:
+  lefthook-freebsd-x64@2.1.12:
     optional: true
 
-  lefthook-linux-arm64@2.1.4:
+  lefthook-linux-arm64@2.1.12:
     optional: true
 
-  lefthook-linux-x64@2.1.4:
+  lefthook-linux-x64@2.1.12:
     optional: true
 
-  lefthook-openbsd-arm64@2.1.4:
+  lefthook-openbsd-arm64@2.1.12:
     optional: true
 
-  lefthook-openbsd-x64@2.1.4:
+  lefthook-openbsd-x64@2.1.12:
     optional: true
 
-  lefthook-windows-arm64@2.1.4:
+  lefthook-windows-arm64@2.1.12:
     optional: true
 
-  lefthook-windows-x64@2.1.4:
+  lefthook-windows-x64@2.1.12:
     optional: true
 
-  lefthook@2.1.4:
+  lefthook@2.1.12:
     optionalDependencies:
-      lefthook-darwin-arm64: 2.1.4
-      lefthook-darwin-x64: 2.1.4
-      lefthook-freebsd-arm64: 2.1.4
-      lefthook-freebsd-x64: 2.1.4
-      lefthook-linux-arm64: 2.1.4
-      lefthook-linux-x64: 2.1.4
-      lefthook-openbsd-arm64: 2.1.4
-      lefthook-openbsd-x64: 2.1.4
-      lefthook-windows-arm64: 2.1.4
-      lefthook-windows-x64: 2.1.4
+      lefthook-darwin-arm64: 2.1.12
+      lefthook-darwin-x64: 2.1.12
+      lefthook-freebsd-arm64: 2.1.12
+      lefthook-freebsd-x64: 2.1.12
+      lefthook-linux-arm64: 2.1.12
+      lefthook-linux-x64: 2.1.12
+      lefthook-openbsd-arm64: 2.1.12
+      lefthook-openbsd-x64: 2.1.12
+      lefthook-windows-arm64: 2.1.12
+      lefthook-windows-x64: 2.1.12
 
   linkify-it@5.0.2:
     dependencies:
