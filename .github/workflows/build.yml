@@ -88,13 +88,13 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Download allure results from Ubuntu
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           name: allure-results-ubuntu-latest
           path: ./
 
       - name: Download allure results from macOS
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           name: allure-results-macos-latest
           path: ./
