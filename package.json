@@ -25,7 +25,7 @@
     "allure": "3.11.0",
     "allure-js-commons": "^3.10.0",
     "allure-playwright": "^3.10.0",
-    "allure-vitest": "^3.10.0",
+    "allure-vitest": "^3.11.0",
     "d3-shape": "^3.2.0",
     "lefthook": "^2.1.4",
     "npm-run-all2": "^8.0.4",
