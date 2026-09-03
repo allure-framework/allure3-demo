@@ -34,7 +34,7 @@ jobs:
       - name: Enable Corepack
         run: corepack enable pnpm
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with:
           version: 10
           run_install: false
@@ -74,7 +74,7 @@ jobs:
       - name: Enable Corepack
         run: corepack enable pnpm
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with:
           version: 10
           run_install: false
