@@ -21,7 +21,7 @@
     "@playwright/test": "^1.60.0",
     "@types/d3-shape": "^3",
     "@types/node": "^26.4.0",
-    "@vitest/runner": "^4.1.2",
+    "@vitest/runner": "^4.1.11",
     "allure": "3.16.0",
     "allure-js-commons": "^3.11.0",
     "allure-playwright": "^3.11.0",

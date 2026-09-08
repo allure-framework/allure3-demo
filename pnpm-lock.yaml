@@ -38,11 +38,11 @@ importers:
         specifier: ^26.4.0
         version: 26.4.1
       '@vitest/runner':
-        specifier: ^4.1.2
-        version: 4.1.2
+        specifier: ^4.1.11
+        version: 4.1.11
       allure:
         specifier: 3.16.0
-        version: 3.16.0(preact@10.28.2)
+        version: 3.16.0(debug@4.4.3)(preact@10.28.2)
       allure-js-commons:
         specifier: ^3.11.0
         version: 3.11.1(allure-playwright@3.11.1(@playwright/test@1.60.0))
@@ -51,7 +51,7 @@ importers:
         version: 3.11.1(@playwright/test@1.60.0)
       allure-vitest:
         specifier: ^3.11.0
-        version: 3.11.1(@vitest/runner@4.1.2)(allure-playwright@3.11.1(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@26.4.1)(vite@7.3.5(@types/node@26.4.1)(jiti@2.7.0)(yaml@2.8.3)))
+        version: 3.11.1(@vitest/runner@4.1.11)(allure-playwright@3.11.1(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@26.4.1)(vite@7.3.5(@types/node@26.4.1)(jiti@2.7.0)(yaml@2.8.3)))
       d3-shape:
         specifier: ^3.2.0
         version: 3.2.0
@@ -806,8 +806,14 @@ packages:
       vite:
         optional: true
 
+  '@vitest/pretty-format@4.1.11':
+    resolution: {integrity: sha512-yiZzPbGTS9Sr/JpFl8zHrcIkAofNbFV6k21vIgQN/cY/oxZeXhJv5sc/MBJ5jFKWmWs+oJHw0UXLZjmf931+Vw==}
+
   '@vitest/pretty-format@4.1.2':
     resolution: {integrity: sha512-dwQga8aejqeuB+TvXCMzSQemvV9hNEtDDpgUKDzOmNQayl2OG241PSWeJwKRH3CiC+sESrmoFd49rfnq7T4RnA==}
+
+  '@vitest/runner@4.1.11':
+    resolution: {integrity: sha512-LztvUgdwMNJMIkj3hQnnxiC2Xy1zNxq928W/xhjCLaNCzqTZOudjwbQf6v9IntZGPw132i2Lq2rgTRZHD3JHNw==}
 
   '@vitest/runner@4.1.2':
     resolution: {integrity: sha512-Gr+FQan34CdiYAwpGJmQG8PgkyFVmARK8/xSijia3eTFgVfpcpztWLuP6FttGNfPLJhaZVP/euvujeNYar36OQ==}
@@ -817,6 +823,9 @@ packages:
 
   '@vitest/spy@4.1.2':
     resolution: {integrity: sha512-DU4fBnbVCJGNBwVA6xSToNXrkZNSiw59H8tcuUspVMsBDBST4nfvsPsEHDHGtWRRnqBERBQu7TrTKskmjqTXKA==}
+
+  '@vitest/utils@4.1.11':
+    resolution: {integrity: sha512-zTCVGpyFsGWBhllOyKlTw/vnr6D9qxsfSDyfbyZmTyjHw5N/VuvzHpHoQjm2ZJzn4RJgx5w4r7V0er69CmLgPQ==}
 
   '@vitest/utils@4.1.2':
     resolution: {integrity: sha512-xw2/TiX82lQHA06cgbqRKFb5lCAy3axQ4H4SoUFhUsg+wztiet+co86IAMDtF6Vm1hc7J6j09oh/rgDn+JdKIQ==}
@@ -1632,6 +1641,10 @@ packages:
     resolution: {integrity: sha512-Bf+ILmBgretUrdJxzXM0SgXLZ3XfiaUuOj/IKQHuTXip+05Xn+uyEYdVg0kYDipTBcLrCVyUzAPz7QmArb0mmw==}
     engines: {node: '>=14.0.0'}
 
+  tinyrainbow@3.1.1:
+    resolution: {integrity: sha512-yau8yJdTt989Mm0Bd/236QnzEiPf2xLLTqUZRUJOo/3CB078LSwzei343DgtJVmfJKJE3TMINY1u42SQsP6mXw==}
+    engines: {node: '>=14.0.0'}
+
   typanion@3.14.0:
     resolution: {integrity: sha512-ZW/lVMRabETuYCd9O9ZvMhAh8GslSqaUjxmK/JLPCh6l73CvLBiuXswj/+7LdnWOgYsQ130FqLzFz5aGT4I3Ug==}
 
@@ -1796,7 +1809,7 @@ snapshots:
     dependencies:
       d3-shape: 3.2.0
 
-  '@allurereport/core@3.16.0(preact@10.28.2)':
+  '@allurereport/core@3.16.0(debug@4.4.3)(preact@10.28.2)':
     dependencies:
       '@allurereport/ci': 3.16.0
       '@allurereport/cli-commons': 3.16.0
@@ -1808,15 +1821,15 @@ snapshots:
       '@allurereport/plugin-classic': 3.16.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.16.0
       '@allurereport/plugin-dashboard': 3.16.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.16.0
+      '@allurereport/plugin-jira': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.16.0
       '@allurereport/plugin-progress': 3.16.0
       '@allurereport/plugin-slack': 3.16.0
-      '@allurereport/plugin-testops': 3.16.0
+      '@allurereport/plugin-testops': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-testplan': 3.16.0
       '@allurereport/reader': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
       '@allurereport/summary': 3.16.0
       glob: 13.0.6
       handlebars: 4.7.9
@@ -1904,11 +1917,11 @@ snapshots:
       - preact
       - typescript
 
-  '@allurereport/plugin-jira@3.16.0':
+  '@allurereport/plugin-jira@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
-      axios: 1.20.0
+      axios: 1.20.0(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -1935,7 +1948,7 @@ snapshots:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
 
-  '@allurereport/plugin-testops@3.16.0':
+  '@allurereport/plugin-testops@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/ci': 3.16.0
       '@allurereport/cli-commons': 3.16.0
@@ -1943,8 +1956,8 @@ snapshots:
       '@allurereport/git': 3.16.0
       '@allurereport/plugin-api': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
-      axios: 1.20.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
+      axios: 1.20.0(debug@4.4.3)
       form-data: 4.0.6
       lodash-es: 4.18.1
       p-limit: 7.3.0
@@ -1971,11 +1984,11 @@ snapshots:
       '@allurereport/reader-api': 3.16.0
       fast-xml-parser: 5.8.0
 
-  '@allurereport/service@3.16.0':
+  '@allurereport/service@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
-      axios: 1.20.0
+      axios: 1.20.0(debug@4.4.3)
       open: 11.0.2
     transitivePeerDependencies:
       - debug
@@ -2696,9 +2709,18 @@ snapshots:
     optionalDependencies:
       vite: 7.3.5(@types/node@26.4.1)(jiti@2.7.0)(yaml@2.8.3)
 
+  '@vitest/pretty-format@4.1.11':
+    dependencies:
+      tinyrainbow: 3.1.1
+
   '@vitest/pretty-format@4.1.2':
     dependencies:
       tinyrainbow: 3.1.0
+
+  '@vitest/runner@4.1.11':
+    dependencies:
+      '@vitest/utils': 4.1.11
+      pathe: 2.0.3
 
   '@vitest/runner@4.1.2':
     dependencies:
@@ -2713,6 +2735,12 @@ snapshots:
       pathe: 2.0.3
 
   '@vitest/spy@4.1.2': {}
+
+  '@vitest/utils@4.1.11':
+    dependencies:
+      '@vitest/pretty-format': 4.1.11
+      convert-source-map: 2.0.0
+      tinyrainbow: 3.1.1
 
   '@vitest/utils@4.1.2':
     dependencies:
@@ -2743,19 +2771,19 @@ snapshots:
       '@playwright/test': 1.60.0
       allure-js-commons: 3.11.1(allure-playwright@3.11.1(@playwright/test@1.60.0))
 
-  allure-vitest@3.11.1(@vitest/runner@4.1.2)(allure-playwright@3.11.1(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@26.4.1)(vite@7.3.5(@types/node@26.4.1)(jiti@2.7.0)(yaml@2.8.3))):
+  allure-vitest@3.11.1(@vitest/runner@4.1.11)(allure-playwright@3.11.1(@playwright/test@1.60.0))(vitest@4.1.2(@types/node@26.4.1)(vite@7.3.5(@types/node@26.4.1)(jiti@2.7.0)(yaml@2.8.3))):
     dependencies:
-      '@vitest/runner': 4.1.2
+      '@vitest/runner': 4.1.11
       allure-js-commons: 3.11.1(allure-playwright@3.11.1(@playwright/test@1.60.0))
       vitest: 4.1.2(@types/node@26.4.1)(vite@7.3.5(@types/node@26.4.1)(jiti@2.7.0)(yaml@2.8.3))
     transitivePeerDependencies:
       - allure-playwright
 
-  allure@3.16.0(preact@10.28.2):
+  allure@3.16.0(debug@4.4.3)(preact@10.28.2):
     dependencies:
       '@allurereport/charts-api': 3.16.0
       '@allurereport/ci': 3.16.0
-      '@allurereport/core': 3.16.0(preact@10.28.2)
+      '@allurereport/core': 3.16.0(debug@4.4.3)(preact@10.28.2)
       '@allurereport/core-api': 3.16.0
       '@allurereport/directory-watcher': 3.16.0
       '@allurereport/plugin-agent': 3.16.0
@@ -2765,13 +2793,13 @@ snapshots:
       '@allurereport/plugin-classic': 3.16.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.16.0
       '@allurereport/plugin-dashboard': 3.16.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.16.0
+      '@allurereport/plugin-jira': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.16.0
       '@allurereport/plugin-progress': 3.16.0
       '@allurereport/plugin-server-reload': 3.16.0
       '@allurereport/plugin-slack': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
       '@allurereport/static-server': 3.16.0
       adm-zip: 0.6.0
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
@@ -2800,9 +2828,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.20.0:
+  axios@1.20.0(debug@4.4.3):
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.0(debug@4.4.3)
       form-data: 4.0.6
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -3090,7 +3118,9 @@ snapshots:
       locate-path: 8.0.0
       unicorn-magic: 0.3.0
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.0(debug@4.4.3):
+    optionalDependencies:
+      debug: 4.4.3
 
   form-data@4.0.6:
     dependencies:
@@ -3521,6 +3551,8 @@ snapshots:
   tinypool@2.1.0: {}
 
   tinyrainbow@3.1.0: {}
+
+  tinyrainbow@3.1.1: {}
 
   typanion@3.14.0: {}
 
