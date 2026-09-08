@@ -42,7 +42,7 @@ importers:
         version: 4.1.2
       allure:
         specifier: 3.16.0
-        version: 3.16.0(preact@10.28.2)
+        version: 3.16.0(debug@4.4.3)(preact@10.28.2)
       allure-js-commons:
         specifier: ^3.11.0
         version: 3.11.1(allure-playwright@3.11.1(@playwright/test@1.60.0))
@@ -59,8 +59,8 @@ importers:
         specifier: ^2.1.12
         version: 2.1.12
       npm-run-all2:
-        specifier: ^8.0.4
-        version: 8.0.4
+        specifier: ^9.0.3
+        version: 9.0.3
       oxfmt:
         specifier: ^0.42.0
         version: 0.42.0
@@ -856,9 +856,9 @@ packages:
     resolution: {integrity: sha512-pgPwDadzT2N6Z0yz0NoGx/vPaxDeERukz6pE8kim6UTE++1fCNWXDiOB7SVDqzZonW2Tp81SrHfAGdZeP38Djg==}
     hasBin: true
 
-  ansi-styles@6.2.3:
-    resolution: {integrity: sha512-4Dj6M28JB+oAH8kFkTLUo+a2jwOFkuqb3yucU0CANcRRUbxS0cP0nZYCGjcc3BNXwRIsUVmDGgzawme7zvJHvg==}
-    engines: {node: '>=12'}
+  ansi-styles@7.0.0:
+    resolution: {integrity: sha512-kKvt3m4uwzqL0wlkPd09CmljPJGOZZ4D0fP65sqFSvPkMRKhNi+74MgIJ5QxE6SxqB4t4KyUFGg8+n5zjo6hew==}
+    engines: {node: '>=22'}
 
   ansi-to-html@0.7.2:
     resolution: {integrity: sha512-v6MqmEpNlxF+POuyhKkidusCHWWkaLcGRURzivcU3I9tv7k4JVhFcnukrM5Rlk2rUywdZuzYAZ+kbZqWCnfN3g==}
@@ -1270,17 +1270,17 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  isexe@3.1.1:
-    resolution: {integrity: sha512-LpB/54B+/2J5hqQ7imZHfdU31OlgQqx7ZicVlkm9kzg9/w8GKLEcFfJl/t7DCEDueOyBAD6zCCwTO6Fzs0NoEQ==}
-    engines: {node: '>=16'}
+  isexe@4.0.0:
+    resolution: {integrity: sha512-FFUtZMpoZ8RqHS3XeXEmHWLA4thH+ZxCv2lOiPIn1Xc7CxrqhWzNSDzD+/chS/zbYezmiwWLdQC09JdQKmthOw==}
+    engines: {node: '>=20'}
 
   jiti@2.7.0:
     resolution: {integrity: sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==}
     hasBin: true
 
-  json-parse-even-better-errors@4.0.0:
-    resolution: {integrity: sha512-lR4MXjGNgkJc7tkQ97kb2nuEMnNCyU//XYVH0MKTGcXEiSudQ5MKGKen3C5QubYy0vmq+JGitUg92uuywGEwIA==}
-    engines: {node: ^18.17.0 || >=20.5.0}
+  json-parse-even-better-errors@6.0.0:
+    resolution: {integrity: sha512-2/8adwnK1/+Fdjyts4r6wSpfANWw8zdNhU9U/Llk59c6O+DjSisPWPykwoL8gZmocP9Dy64S7oie2g+Mia123A==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
 
   kleur@3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
@@ -1430,13 +1430,13 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  npm-normalize-package-bin@4.0.0:
-    resolution: {integrity: sha512-TZKxPvItzai9kN9H/TkmCtx/ZN/hvr3vUycjlfmH0ootY9yFBzNOpiXAdIn1Iteqsvk4lQn6B5PTrt+n6h8k/w==}
-    engines: {node: ^18.17.0 || >=20.5.0}
+  npm-normalize-package-bin@6.0.0:
+    resolution: {integrity: sha512-tdt4aFn9QamlhdN3HV2D2ccpBwO5/fyjjbXUxYA6uBjyekMZcZvDq0aSj9t5Jo+tih6AYFnt/cuIRn9013e0Uw==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
 
-  npm-run-all2@8.0.4:
-    resolution: {integrity: sha512-wdbB5My48XKp2ZfJUlhnLVihzeuA1hgBnqB2J9ahV77wLS+/YAJAlN8I+X3DIFIPZ3m5L7nplmlbhNiFDmXRDA==}
-    engines: {node: ^20.5.0 || >=22.0.0, npm: '>= 10'}
+  npm-run-all2@9.0.3:
+    resolution: {integrity: sha512-BQAEdU1PtYc48qYRdghW2BVTQT3VqWCoFQmO87NlM1h1PYwMCKQpUWaNyB20V26caNzFsXQDfyOdznLlHCih6g==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0, npm: '>= 10'}
     hasBin: true
 
   obug@2.1.3:
@@ -1486,9 +1486,13 @@ packages:
     resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
     engines: {node: '>=12'}
 
-  pidtree@0.6.0:
-    resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
-    engines: {node: '>=0.10'}
+  picomatch@4.0.7:
+    resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
+    engines: {node: '>=12'}
+
+  pidtree@1.0.0:
+    resolution: {integrity: sha512-avfAvjB9Dd0wdj3rjJX//yS+G79OO0KrS5pJHFJENjYGX6N4SMgEDBBI/yFy0lloOYSaC6XQxzpOAMPfSYFV/Q==}
+    engines: {node: '>=18'}
     hasBin: true
 
   playwright-core@1.60.0:
@@ -1542,9 +1546,9 @@ packages:
       react: ^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  read-package-json-fast@4.0.0:
-    resolution: {integrity: sha512-qpt8EwugBWDw2cgE2W+/3oxC+KTez2uSVR8JU9Q36TXPAGCaozfQUs59v4j4GFpWTaw0i6hAZSvOmu1J0uOEUg==}
-    engines: {node: ^18.17.0 || >=20.5.0}
+  read-package-json-fast@6.0.0:
+    resolution: {integrity: sha512-PNaGjoCnw9DBA2Kl8D+8po957z778q/HOPuY2u3Bkw/JO3eC8MDx7jn/PgMtSgpcBbs+6UOjDbwReGpXmRvs0g==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
 
   readable-stream@4.7.0:
     resolution: {integrity: sha512-oIGGmcpTLwPga8Bn6/Z75SVaH1z5dUut2ibSyAMVhmUggWpmDn2dapB0n7f8nwaSiRtepAsfJyfXIO5DCVAODg==}
@@ -1736,9 +1740,9 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
-  which@5.0.0:
-    resolution: {integrity: sha512-JEdGzHwwkrbWoGOlIHqQ5gtprKGOenpDHpxE9zVR1bWbOtYRyPPHMe9FaP6x61CmNaTThSkb0DAJte5jD+DmzQ==}
-    engines: {node: ^18.17.0 || >=20.5.0}
+  which@7.0.0:
+    resolution: {integrity: sha512-RancgH2dmbLdHl6LRhEqvklWMgl/Hdnun0Y90KhBOLkMefg8Qa7/Zel8Sm+8HEcP6DEjzsWzpkuBQEZok58isA==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     hasBin: true
 
   why-is-node-running@2.3.0:
@@ -1796,7 +1800,7 @@ snapshots:
     dependencies:
       d3-shape: 3.2.0
 
-  '@allurereport/core@3.16.0(preact@10.28.2)':
+  '@allurereport/core@3.16.0(debug@4.4.3)(preact@10.28.2)':
     dependencies:
       '@allurereport/ci': 3.16.0
       '@allurereport/cli-commons': 3.16.0
@@ -1808,15 +1812,15 @@ snapshots:
       '@allurereport/plugin-classic': 3.16.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.16.0
       '@allurereport/plugin-dashboard': 3.16.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.16.0
+      '@allurereport/plugin-jira': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.16.0
       '@allurereport/plugin-progress': 3.16.0
       '@allurereport/plugin-slack': 3.16.0
-      '@allurereport/plugin-testops': 3.16.0
+      '@allurereport/plugin-testops': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-testplan': 3.16.0
       '@allurereport/reader': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
       '@allurereport/summary': 3.16.0
       glob: 13.0.6
       handlebars: 4.7.9
@@ -1904,11 +1908,11 @@ snapshots:
       - preact
       - typescript
 
-  '@allurereport/plugin-jira@3.16.0':
+  '@allurereport/plugin-jira@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
-      axios: 1.20.0
+      axios: 1.20.0(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -1935,7 +1939,7 @@ snapshots:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
 
-  '@allurereport/plugin-testops@3.16.0':
+  '@allurereport/plugin-testops@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/ci': 3.16.0
       '@allurereport/cli-commons': 3.16.0
@@ -1943,8 +1947,8 @@ snapshots:
       '@allurereport/git': 3.16.0
       '@allurereport/plugin-api': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
-      axios: 1.20.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
+      axios: 1.20.0(debug@4.4.3)
       form-data: 4.0.6
       lodash-es: 4.18.1
       p-limit: 7.3.0
@@ -1971,11 +1975,11 @@ snapshots:
       '@allurereport/reader-api': 3.16.0
       fast-xml-parser: 5.8.0
 
-  '@allurereport/service@3.16.0':
+  '@allurereport/service@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
-      axios: 1.20.0
+      axios: 1.20.0(debug@4.4.3)
       open: 11.0.2
     transitivePeerDependencies:
       - debug
@@ -2751,11 +2755,11 @@ snapshots:
     transitivePeerDependencies:
       - allure-playwright
 
-  allure@3.16.0(preact@10.28.2):
+  allure@3.16.0(debug@4.4.3)(preact@10.28.2):
     dependencies:
       '@allurereport/charts-api': 3.16.0
       '@allurereport/ci': 3.16.0
-      '@allurereport/core': 3.16.0(preact@10.28.2)
+      '@allurereport/core': 3.16.0(debug@4.4.3)(preact@10.28.2)
       '@allurereport/core-api': 3.16.0
       '@allurereport/directory-watcher': 3.16.0
       '@allurereport/plugin-agent': 3.16.0
@@ -2765,13 +2769,13 @@ snapshots:
       '@allurereport/plugin-classic': 3.16.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.16.0
       '@allurereport/plugin-dashboard': 3.16.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.16.0
+      '@allurereport/plugin-jira': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.16.0
       '@allurereport/plugin-progress': 3.16.0
       '@allurereport/plugin-server-reload': 3.16.0
       '@allurereport/plugin-slack': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
       '@allurereport/static-server': 3.16.0
       adm-zip: 0.6.0
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
@@ -2786,7 +2790,7 @@ snapshots:
       - supports-color
       - typescript
 
-  ansi-styles@6.2.3: {}
+  ansi-styles@7.0.0: {}
 
   ansi-to-html@0.7.2:
     dependencies:
@@ -2800,9 +2804,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.20.0:
+  axios@1.20.0(debug@4.4.3):
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.0(debug@4.4.3)
       form-data: 4.0.6
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -3081,16 +3085,18 @@ snapshots:
       strnum: 2.4.0
       xml-naming: 0.1.0
 
-  fdir@6.5.0(picomatch@4.0.4):
+  fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
-      picomatch: 4.0.4
+      picomatch: 4.0.7
 
   find-up@8.0.0:
     dependencies:
       locate-path: 8.0.0
       unicorn-magic: 0.3.0
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.0(debug@4.4.3):
+    optionalDependencies:
+      debug: 4.4.3
 
   form-data@4.0.6:
     dependencies:
@@ -3188,11 +3194,11 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  isexe@3.1.1: {}
+  isexe@4.0.0: {}
 
   jiti@2.7.0: {}
 
-  json-parse-even-better-errors@4.0.0: {}
+  json-parse-even-better-errors@6.0.0: {}
 
   kleur@3.0.3: {}
 
@@ -3310,18 +3316,18 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  npm-normalize-package-bin@4.0.0: {}
+  npm-normalize-package-bin@6.0.0: {}
 
-  npm-run-all2@8.0.4:
+  npm-run-all2@9.0.3:
     dependencies:
-      ansi-styles: 6.2.3
+      ansi-styles: 7.0.0
       cross-spawn: 7.0.6
       memorystream: 0.3.1
-      picomatch: 4.0.4
-      pidtree: 0.6.0
-      read-package-json-fast: 4.0.0
+      picomatch: 4.0.7
+      pidtree: 1.0.0
+      read-package-json-fast: 6.0.0
       shell-quote: 1.9.0
-      which: 5.0.0
+      which: 7.0.0
 
   obug@2.1.3: {}
 
@@ -3385,7 +3391,9 @@ snapshots:
 
   picomatch@4.0.4: {}
 
-  pidtree@0.6.0: {}
+  picomatch@4.0.7: {}
+
+  pidtree@1.0.0: {}
 
   playwright-core@1.60.0: {}
 
@@ -3425,10 +3433,10 @@ snapshots:
       react: '@preact/compat@18.3.2(preact@10.28.2)'
       react-dom: '@preact/compat@18.3.2(preact@10.28.2)'
 
-  read-package-json-fast@4.0.0:
+  read-package-json-fast@6.0.0:
     dependencies:
-      json-parse-even-better-errors: 4.0.0
-      npm-normalize-package-bin: 4.0.0
+      json-parse-even-better-errors: 6.0.0
+      npm-normalize-package-bin: 6.0.0
 
   readable-stream@4.7.0:
     dependencies:
@@ -3515,8 +3523,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
 
   tinypool@2.1.0: {}
 
@@ -3540,8 +3548,8 @@ snapshots:
   vite@7.3.5(@types/node@26.4.1)(jiti@2.7.0)(yaml@2.8.3):
     dependencies:
       esbuild: 0.28.1
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
       postcss: 8.5.25
       rollup: 4.62.2
       tinyglobby: 0.2.17
@@ -3582,9 +3590,9 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  which@5.0.0:
+  which@7.0.0:
     dependencies:
-      isexe: 3.1.1
+      isexe: 4.0.0
 
   why-is-node-running@2.3.0:
     dependencies:
