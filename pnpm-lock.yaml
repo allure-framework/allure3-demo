@@ -42,7 +42,7 @@ importers:
         version: 4.1.2
       allure:
         specifier: 3.16.0
-        version: 3.16.0(preact@10.28.2)
+        version: 3.16.0(debug@4.4.3)(preact@10.28.2)
       allure-js-commons:
         specifier: ^3.11.0
         version: 3.11.1(allure-playwright@3.11.1(@playwright/test@1.60.0))
@@ -1203,8 +1203,8 @@ packages:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
 
-  handlebars@4.7.9:
-    resolution: {integrity: sha512-4E71E0rpOaQuJR2A3xDZ+GM1HyWYv1clR58tC8emQNeQe3RH7MAzSbat+V0wG78LQBo6m6bzSG/L4pBuCsgnUQ==}
+  handlebars@4.7.10:
+    resolution: {integrity: sha512-P5VJMVM7qgBn6vjXMw8WG9uVI+ncf2pi72j4de4yz5ZULLj2RGqLYaKOYGsgyrViQ0tePOVlN1tDCCXXtFqXKg==}
     engines: {node: '>=0.4.7'}
     hasBin: true
 
@@ -1796,7 +1796,7 @@ snapshots:
     dependencies:
       d3-shape: 3.2.0
 
-  '@allurereport/core@3.16.0(preact@10.28.2)':
+  '@allurereport/core@3.16.0(debug@4.4.3)(preact@10.28.2)':
     dependencies:
       '@allurereport/ci': 3.16.0
       '@allurereport/cli-commons': 3.16.0
@@ -1808,18 +1808,18 @@ snapshots:
       '@allurereport/plugin-classic': 3.16.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.16.0
       '@allurereport/plugin-dashboard': 3.16.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.16.0
+      '@allurereport/plugin-jira': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.16.0
       '@allurereport/plugin-progress': 3.16.0
       '@allurereport/plugin-slack': 3.16.0
-      '@allurereport/plugin-testops': 3.16.0
+      '@allurereport/plugin-testops': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-testplan': 3.16.0
       '@allurereport/reader': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
       '@allurereport/summary': 3.16.0
       glob: 13.0.6
-      handlebars: 4.7.9
+      handlebars: 4.7.10
       jiti: 2.7.0
       node-stream-zip: 1.15.0
       p-limit: 7.3.0
@@ -1851,7 +1851,7 @@ snapshots:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
       find-up: 8.0.0
-      handlebars: 4.7.9
+      handlebars: 4.7.10
 
   '@allurereport/plugin-api@3.16.0':
     dependencies:
@@ -1865,7 +1865,7 @@ snapshots:
       '@allurereport/web-awesome': 3.16.0
       '@allurereport/web-commons': 3.16.0(preact@10.28.2)
       d3-shape: 3.2.0
-      handlebars: 4.7.9
+      handlebars: 4.7.10
       markdown-it: 14.2.0
     transitivePeerDependencies:
       - preact
@@ -1880,7 +1880,7 @@ snapshots:
       '@allurereport/web-classic': 3.16.0
       '@allurereport/web-commons': 3.16.0(preact@10.28.2)
       d3-shape: 3.2.0
-      handlebars: 4.7.9
+      handlebars: 4.7.10
       markdown-it: 14.2.0
     transitivePeerDependencies:
       - preact
@@ -1899,16 +1899,16 @@ snapshots:
       '@allurereport/web-commons': 3.16.0(preact@10.28.2)
       '@allurereport/web-dashboard': 3.16.0
       d3-shape: 3.2.0
-      handlebars: 4.7.9
+      handlebars: 4.7.10
     transitivePeerDependencies:
       - preact
       - typescript
 
-  '@allurereport/plugin-jira@3.16.0':
+  '@allurereport/plugin-jira@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
-      axios: 1.20.0
+      axios: 1.20.0(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -1935,7 +1935,7 @@ snapshots:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
 
-  '@allurereport/plugin-testops@3.16.0':
+  '@allurereport/plugin-testops@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/ci': 3.16.0
       '@allurereport/cli-commons': 3.16.0
@@ -1943,8 +1943,8 @@ snapshots:
       '@allurereport/git': 3.16.0
       '@allurereport/plugin-api': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
-      axios: 1.20.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
+      axios: 1.20.0(debug@4.4.3)
       form-data: 4.0.6
       lodash-es: 4.18.1
       p-limit: 7.3.0
@@ -1971,11 +1971,11 @@ snapshots:
       '@allurereport/reader-api': 3.16.0
       fast-xml-parser: 5.8.0
 
-  '@allurereport/service@3.16.0':
+  '@allurereport/service@3.16.0(debug@4.4.3)':
     dependencies:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
-      axios: 1.20.0
+      axios: 1.20.0(debug@4.4.3)
       open: 11.0.2
     transitivePeerDependencies:
       - debug
@@ -1991,7 +1991,7 @@ snapshots:
       '@allurereport/core-api': 3.16.0
       '@allurereport/plugin-api': 3.16.0
       '@allurereport/web-summary': 3.16.0
-      handlebars: 4.7.9
+      handlebars: 4.7.10
     transitivePeerDependencies:
       - typescript
 
@@ -2751,11 +2751,11 @@ snapshots:
     transitivePeerDependencies:
       - allure-playwright
 
-  allure@3.16.0(preact@10.28.2):
+  allure@3.16.0(debug@4.4.3)(preact@10.28.2):
     dependencies:
       '@allurereport/charts-api': 3.16.0
       '@allurereport/ci': 3.16.0
-      '@allurereport/core': 3.16.0(preact@10.28.2)
+      '@allurereport/core': 3.16.0(debug@4.4.3)(preact@10.28.2)
       '@allurereport/core-api': 3.16.0
       '@allurereport/directory-watcher': 3.16.0
       '@allurereport/plugin-agent': 3.16.0
@@ -2765,13 +2765,13 @@ snapshots:
       '@allurereport/plugin-classic': 3.16.0(preact@10.28.2)
       '@allurereport/plugin-csv': 3.16.0
       '@allurereport/plugin-dashboard': 3.16.0(preact@10.28.2)
-      '@allurereport/plugin-jira': 3.16.0
+      '@allurereport/plugin-jira': 3.16.0(debug@4.4.3)
       '@allurereport/plugin-log': 3.16.0
       '@allurereport/plugin-progress': 3.16.0
       '@allurereport/plugin-server-reload': 3.16.0
       '@allurereport/plugin-slack': 3.16.0
       '@allurereport/reader-api': 3.16.0
-      '@allurereport/service': 3.16.0
+      '@allurereport/service': 3.16.0(debug@4.4.3)
       '@allurereport/static-server': 3.16.0
       adm-zip: 0.6.0
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
@@ -2800,9 +2800,9 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.20.0:
+  axios@1.20.0(debug@4.4.3):
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.0(debug@4.4.3)
       form-data: 4.0.6
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -3090,7 +3090,9 @@ snapshots:
       locate-path: 8.0.0
       unicorn-magic: 0.3.0
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.0(debug@4.4.3):
+    optionalDependencies:
+      debug: 4.4.3
 
   form-data@4.0.6:
     dependencies:
@@ -3134,7 +3136,7 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  handlebars@4.7.9:
+  handlebars@4.7.10:
     dependencies:
       minimist: 1.2.8
       neo-async: 2.6.2
