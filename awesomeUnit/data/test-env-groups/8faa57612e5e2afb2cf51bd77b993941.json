@@ -1,1 +1,1 @@
-{"id":"8faa57612e5e2afb2cf51bd77b993941","fullName":"start.test.ts:156:5","name":"\"NUnit\"","status":"broken","testResultsByEnv":{"ubuntu-latest":"e4c0bc2f0652bcedd5516f46efeecd20","macos-latest":"ea132ef1e6db47a038bc1df727f4ad21"}}
+{"id":"8faa57612e5e2afb2cf51bd77b993941","fullName":"start.test.ts:156:5","name":"\"NUnit\"","status":"passed","testResultsByEnv":{"ubuntu-latest":"d96a8dc6a495d2c0d6795361f60981e2","macos-latest":"e92c4a2baace34a68f2e49eccd354056"}}

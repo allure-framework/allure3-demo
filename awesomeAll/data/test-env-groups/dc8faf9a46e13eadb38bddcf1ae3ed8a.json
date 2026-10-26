@@ -1,1 +1,1 @@
-{"id":"dc8faf9a46e13eadb38bddcf1ae3ed8a","fullName":"start.test.ts:131:5","name":"\"JUnit5\"","status":"broken","testResultsByEnv":{"ubuntu-latest":"c6d487c1e697f93564ef3706bfdb1299","macos-latest":"45fb43eed6f98200116dd8842b88850c"}}
+{"id":"dc8faf9a46e13eadb38bddcf1ae3ed8a","fullName":"start.test.ts:131:5","name":"\"JUnit5\"","status":"passed","testResultsByEnv":{"ubuntu-latest":"09f592761318fc3778a771bcfa05882f","macos-latest":"a9c228d2a920574ca5fcede619bc23b1"}}
