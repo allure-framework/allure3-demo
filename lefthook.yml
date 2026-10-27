@@ -15,12 +15,11 @@ pre-commit:
         - "*.yml"
         - "*.yaml"
         - "*.md"
-      run: pnpm exec oxfmt --write {staged_files}
+      run: yarn oxfmt --write {staged_files}
       exclude:
         - "allure-results/**"
         - "allure2-demo-test-results/**"
         - "test-results/**"
         - "node_modules/**"
-        - "pnpm-lock.yaml"
-        - "pnpm-workspace.yaml"
+        - "yarn.lock"
       stage_fixed: true
