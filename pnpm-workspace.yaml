@@ -2,8 +2,8 @@ packages:
   - .
 
 allowBuilds:
-  esbuild: set this to true or false
-  lefthook: set this to true or false
+  esbuild: true
+  lefthook: true
 
 overrides:
   adm-zip@<0.6.0: "0.6.0"
