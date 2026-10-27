@@ -41,24 +41,18 @@ jobs:
           git config --global user.name "${GIT_COMMIT_AUTHOR_NAME}"
           git config --global user.email "${GIT_COMMIT_AUTHOR_EMAIL}"
 
-      - name: Enable Corepack
-        run: corepack enable pnpm
-
-      - uses: pnpm/action-setup@v6
-        with:
-          version: 10
-          run_install: false
-
       - uses: actions/setup-node@v7
         with:
           node-version: 24
-          cache: "pnpm"
+
+      - name: Enable Corepack
+        run: corepack enable yarn
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Test Project
-        run: pnpm allure run --config=./allurerc.mjs --environment="${{ matrix.os }}" --dump="allure-results-${{ matrix.os }}" -- sh -c "pnpm test || true"
+        run: yarn allure run --config=./allurerc.mjs --environment="${{ matrix.os }}" --dump="allure-results-${{ matrix.os }}" -- sh -c "yarn test || true"
 
       - name: Upload test results
         if: always()
@@ -92,21 +86,15 @@ jobs:
           git config --global user.name "${GIT_COMMIT_AUTHOR_NAME}"
           git config --global user.email "${GIT_COMMIT_AUTHOR_EMAIL}"
 
-      - name: Enable Corepack
-        run: corepack enable pnpm
-
-      - uses: pnpm/action-setup@v6
-        with:
-          version: 10
-          run_install: false
-
       - uses: actions/setup-node@v7
         with:
           node-version: 24
-          cache: "pnpm"
+
+      - name: Enable Corepack
+        run: corepack enable yarn
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Download allure results from Ubuntu
         uses: actions/download-artifact@v8
@@ -121,7 +109,7 @@ jobs:
           path: ./
 
       - name: Build report
-        run: pnpm allure generate --dump="allure-results-*.zip" --output=./allure-report
+        run: yarn allure generate --dump="allure-results-*.zip" --output=./allure-report
 
       - name: List report files
         run: tree -a ./allure-report

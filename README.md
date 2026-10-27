@@ -18,7 +18,7 @@ Here you can see reports created by its different plugins:
 ### Prerequisites
 
 - Node.js
-- pnpm
+- Yarn (managed through Corepack)
 
 ### Quick Start
 
@@ -27,15 +27,16 @@ Here you can see reports created by its different plugins:
 git clone https://github.com/allure-framework/allure3-demo.git
 cd allure3-demo
 
-# 2. Install dependencies
-pnpm install
-pnpm exec playwright install
+# 2. Enable Yarn and install dependencies
+corepack enable yarn
+yarn install
+yarn playwright install
 
 # 3. Run tests (generates test results)
-pnpm exec allure run -- pnpm test
+yarn allure run -- yarn test
 
 # 4. Open the report in your browser
-pnpm exec allure open
+yarn allure open
 ```
 
 ### What Gets Generated

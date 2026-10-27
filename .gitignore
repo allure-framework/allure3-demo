@@ -3,4 +3,5 @@ allure-report/
 allure-results/
 test-results/
 node_modules/
+.yarn/*
 out/
