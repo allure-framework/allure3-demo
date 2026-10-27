@@ -1,6 +1,10 @@
 packages:
   - .
 
+allowBuilds:
+  esbuild: set this to true or false
+  lefthook: set this to true or false
+
 overrides:
   adm-zip@<0.6.0: "0.6.0"
   axios@>=1.0.0 <1.18.1: "1.18.1"
@@ -20,3 +24,14 @@ overrides:
   underscore@<=1.13.7: ">=1.13.8"
   vite@7.2.7: "7.3.5"
   yaml@>=2.0.0 <2.8.3: ">=2.8.3"
+  '@vitest/mocker@>=2.1.0-beta.7 <4.1.12': ^4.1.12
+  adm-zip@<0.6.1: ^0.6.1
+  brace-expansion@>=4.0.0 <5.0.12: ^5.0.12
+  dompurify@<=3.4.16: ^3.4.17
+  follow-redirects@>=1.16.0 <1.16.1: ^1.16.1
+  markdown-it@<14.3.3: ^14.3.3
+  shell-quote@>=1.8.4 <1.11.0: ^1.11.0
+  source-map-js@>=1.0.0 <1.2.2: ^1.2.2
+  tinypool@<2.1.2: ^2.1.2
+  vite@>=7.0.0 <=7.3.6: ^7.3.7
+  vitest@>=2.1.0 <4.1.11: ^4.1.11
