@@ -1,1 +1,1 @@
-{"id":"d76c8d79be7ccede177633347a87c13c","fullName":"allure3-demo:test/unit/index.test.ts#unit tests should be skipped","name":"should be skipped","status":"skipped","testResultsByEnv":{"ubuntu-latest":"9bcecf1992250e16deae2bb931e8ab5e","macos-latest":"50313c69c8915da484299c0657de046e"}}
+{"id":"d76c8d79be7ccede177633347a87c13c","fullName":"allure3-demo:test/unit/index.test.ts#unit tests should be skipped","name":"should be skipped","status":"skipped","testResultsByEnv":{"ubuntu-latest":"7a205ed1b4fb483d227a116afe6f1549","macos-latest":"e947c455b1bb993ee6ba79b78596f26d"}}
